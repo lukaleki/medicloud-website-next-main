@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+
+  * {
+    h1 {
+      font-size: 25px !important;
+    }
+    button {
+      font-size: 20px !important;
+    }
+    h4 {
+      font-size: 25px;
+    }
+  }
+
+  .navbar {
+    width: 95%;
+
+    .nav-label {
+      h1 {
+        display: none;
+      }
+    }
+
+    li {
+      margin-left: 20px !important;
+    }
+
+    h3 {
+      font-size: 15px !important;
+    }
+    
+    
+
+    .drop-lang {
+      margin-left: 30px;
+      
+      .georgian-flag {
+        display: none;
+      }
+    }
+  }
+    
+
+    .contact {
+      .clinic-map {
+        width: 500px;
+        height: 430px;
+      }
+    }
+
+    .phone-app {
+      gap: 0px !important;
+      .mobile-wrapper {
+        img {
+        width: 233px;
+        height: 516px;
+      }
+      }
+      
+    }
+}
