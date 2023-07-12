@@ -307,6 +307,9 @@ body {
             align-items: center;
         }
         .mobile-right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         margin-top: 50px;
         width: 35%;
         text-align: left;
@@ -318,11 +321,9 @@ body {
         p {
             color: $primary-text-color;
             width: 70%;
-            margin-top: 75px;
         }
 
         h3 {
-            margin-top: 100px;
             color: $primary-text-color;
         }  
         
@@ -347,6 +348,8 @@ body {
 
     .delivery-left {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 75px;
         p {
                 width: 50%;
@@ -390,8 +393,8 @@ body {
 
     .delivery-right {
         .delivery-android {
-            position: absolute;
-            right: 400px;
+            position: relative;
+            
             animation-duration: 5s;
             animation-name: android-animation;
             animation-iteration-count: infinite;
@@ -399,16 +402,15 @@ body {
         }
 
         .delivery-phone {
-            position: absolute;
-            right: 300px;
+            position: relative;
+            
             animation-duration: 5s;
             animation-name: phone-animation;
             animation-iteration-count: infinite;
         }
 
         .delivery-map {
-            position: absolute;
-            right: 100px;
+            position: relative;
             z-index: -1;
             animation-duration: 5s;
             animation-name: map-animation;

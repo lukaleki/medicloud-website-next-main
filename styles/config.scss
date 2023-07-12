@@ -49,8 +49,11 @@
     }
 
     .phone-app {
-      gap: 0px !important;
+      gap: 200px !important;
       .mobile-wrapper {
+        width: 400px !important;
+        height: 411px !important;
+
         img {
         width: 233px;
         height: 516px;
