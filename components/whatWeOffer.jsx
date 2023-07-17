@@ -13,40 +13,39 @@ function WhatWeOffer() {
       <h1>რას გთავაზობთ?</h1>
 
       <div className="offer-cards">
-        <div className="offer-cards-first-row">
+        
             <div className="offer-card">
-            <div className="icon-frame"><Image src={appWeb} width='32' height='32' alt='app-web' className='offer-image' /></div>
-            <h3>ვებ და მობილური <br /> აპლიკაცია</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+              <div className="icon-frame"><Image src={appWeb} width='32' height='32' alt='app-web' className='offer-image' /></div>
+              <h3>ვებ და მობილური <br /> აპლიკაცია</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
             <div className="offer-card">
-            <div className="icon-frame"><Image src={appDelivery} width='32' height='32' alt='app-web' className='offer-image' /></div>
-            <h3>წამლის მიწოდების <br /> გადაწყვეტილება</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+              <div className="icon-frame"><Image src={appDelivery} width='32' height='32' alt='app-web' className='offer-image' /></div>
+              <h3>წამლის მიწოდების <br /> გადაწყვეტილება</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
             <div className="offer-card">
-            <div className="icon-frame"><Image src={appMonitoring} width='32' height='32' alt='app-web' className='offer-image' /></div>    
-            <h3>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+              <div className="icon-frame"><Image src={appMonitoring} width='32' height='32' alt='app-web' className='offer-image' /></div>    
+              <h3>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
-        </div>
-        <div className="offer-cards-second-row">
+        
             <div className="offer-card">
-            <div className="icon-frame"><Image src={appMobile} width='32' height='32' alt='app-web' className='offer-image' /></div>
-            <h3>ვებ და მობილური <br /> აპლიკაცია</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
-            </div>
-            <div className="offer-card">
-            <div className="icon-frame"><Image src={appPerson} width='32' height='32' alt='app-web' className='offer-image' /></div>
-            <h3>წამლის მიწოდების <br /> გადაწყვეტილება</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+              <div className="icon-frame"><Image src={appMobile} width='32' height='32' alt='app-web' className='offer-image' /></div>
+              <h3>ვებ და მობილური <br /> აპლიკაცია</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
             <div className="offer-card">
-            <div className="icon-frame"><Image src={appChip} width='32' height='32' alt='app-web' className='offer-image' /></div>    
-            <h3>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+              <div className="icon-frame"><Image src={appPerson} width='32' height='32' alt='app-web' className='offer-image' /></div>
+              <h3>წამლის მიწოდების <br /> გადაწყვეტილება</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
-        </div>
+            <div className="offer-card">
+              <div className="icon-frame"><Image src={appChip} width='32' height='32' alt='app-web' className='offer-image' /></div>    
+              <h3>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h3>
+              <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+            </div>
+        
       </div>
     </section>
   )

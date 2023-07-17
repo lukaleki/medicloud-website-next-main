@@ -11,7 +11,7 @@ function Blog() {
         <div className="blog-title"><h1>ბლოგი</h1><Image src={arrowRight} width='32' height='32' alt='arrow-right'/></div>
         <div className="blog-content">
           <div className="blog-left">
-            <Image  src={blogImg} width='200' height='319' alt='blog-img'/>
+            <Image className='blog-img' src={blogImg} width='561' height='319' alt='blog-img'/>
             <div className="blog-info">
                 <h1>რამდენიმე რჩევა, თუ როგორ აირიდო სეზონური გრიპი...</h1>
 

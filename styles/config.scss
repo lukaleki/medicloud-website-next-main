@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (min-width: 378px) and (max-width: 1024px) {
 
   * {
     h1 {
@@ -22,11 +22,11 @@
     }
 
     li {
-      margin-left: 20px !important;
+      margin-left: 20px;
     }
 
     h3 {
-      font-size: 15px !important;
+      font-size: 15px;
     }
     
     
@@ -49,10 +49,10 @@
     }
 
     .phone-app {
-      gap: 200px !important;
+      gap: 200px ;
       .mobile-wrapper {
-        width: 400px !important;
-        height: 411px !important;
+        width: 400px;
+        height: 411px;
 
         img {
         width: 233px;
@@ -61,4 +61,192 @@
       }
       
     }
+
+    
+
+    .clinic-registration {
+      
+      .clinic-img {
+        width: 650px;
+        height: 350px;
+      }
+    }
+
+    .med-delivery {
+
+      .delivery-android {
+        width: 250px;
+        height: 430px;
+        right: 225px !important;
+      }
+      .delivery-phone {
+        width: 180px;
+        height: 390px;
+        right: 150px !important;
+      }
+      .delivery-map {
+        width: 200px;
+        height: 300px;
+        right: 25px !important;
+      }
+
+      .delivery-btn {
+        margin-top: 50px;
+      }
+    }
+
+    .reporting {
+
+      .delivery-img {
+        width: 363px;
+        height: 218px;
+      }
+    }
+
+    .foreign {
+      .foreign-exp-img {
+        width: 275px;
+        height: 275px;
+      }
+    }
+
+    .hardware {
+      gap: 200px !important;
+      .hardware-img {
+        width: 400px;
+        height: 300px;
+      }
+    }
+
+    .questions {
+      .cards{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+      .contact {
+        gap: 50px !important;
+    
+
+    .contact-right {
+      gap: 50px !important;
+      width: 400px !important;
+
+      h3 {
+        font-size: 15px;
+      }
+
+      form {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      textarea {
+        width: 100%;
+      }
+      button {
+        font-size: 15px !important;
+        width: 400px !important;
+      }
+    }
+  }
+
+  .blog {
+
+    .blog-left {
+      margin-top: 75px;
+      .blog-img {
+        width: 436px;
+        height: 235px;
+      }
+  
+      .blog-info {
+        width: 389px !important;
+        height: 130px !important;
+  
+        h1 {
+          font-size: 20px !important;
+        }
+  
+        .blog-info-description {
+          margin-top: 10px !important;
+          
+          h4 {
+            font-size: 14px;
+          }
+        }
+      }
+      
+  
+      
+    }
+
+    .blog-info-card {
+      width: 436px !important;
+
+      h4 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+    
+  }
+
+  footer {
+    
+      h3 {
+          font-size: 14px;
+      }
+      a {
+        font-size: 13px;
+      }
+
+    .footer-content {
+
+      .footer-medicloud-info {
+        .title-wrapper {
+          display: none;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+      
+      
+
+      .footer-contact-links {
+        font-size: 13px;
+      }
+
+      .footer-sub {
+        p {
+          font-size: 13px;
+        }
+
+        .sub-wrapper {
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        form {
+          width: 240px;
+
+          button {
+            width: 82px !important;
+            font-size: 11px !important;
+          }
+        }
+        
+      }
+    }
+    
+  }
+
+    
 }

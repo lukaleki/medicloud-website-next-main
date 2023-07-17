@@ -11,7 +11,7 @@ function Reporting() {
   return (
     <section className='reporting'>
       <div className="reporting-left">
-      <Image className='delivery-img' src={laptop} width='500' height='348' alt='laptop'/> <br />
+      <Image className='delivery-img' src={laptop} width='616' height='348' alt='laptop'/> <br />
       <button className='reporting-btn'>საიტზე გადასვლა <Image src={diagonalArrow} width='14' height='14' alt='diagonal-arrow'/></button>
       </div>
 

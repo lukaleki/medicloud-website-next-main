@@ -27,7 +27,7 @@ function Footer() {
                     <h4>healthcare platform</h4>
                 </div>
             </div>
-            <p>კომპანიის შესახებ ტექსტი, ვცვბცვნვბნხბცბბ ცბცვბტ გრეტყეჯრი  დფგიდფოგმდფ დსფსდფკდსფსდ სდკფსდლგდდგ სდჯდსგჯკდს დსგკდლსგჯ კსდგკსჯგკდს კგდკგდფგკდ</p>
+            <p>კომპანიის შესახებ ტექსტი, ცბცვბვცბვცბ ვცვბცვნვბნხბცბბ ცბცვბტ გრეტყეჯრი  დფგიდფოგმდფ ვცბვცბ ვბვბნვბნნვნვბ ვნვბნვბვნ</p>
           <div className="footer-social">
            <div className="footer-icon"><Image src={facebook} width='8' height='14' alt='facebook-icon'/></div> 
            <div className="footer-icon"><Image src={instagram} width='13' height='13' alt='instagram-icon'/></div> 

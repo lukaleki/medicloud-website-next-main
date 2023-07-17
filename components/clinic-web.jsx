@@ -11,7 +11,7 @@ function ClinicWeb() {
         <p>დაარეგისტრირეთ თქვენი კლინიკა აპლიკაცია მედიქლაუდში და გახადეთ თქვენი სამედიცინო სერვისები პაციენტებისთვის უფრო კომფორტული და ხელმისაწვდომი.</p>
         <button className='reg-btn'>კლინიკების რეგისტრაცია <Image src={diagonalArrow} width='14' height='14' alt='diagonal-arrow'/></button>
       </div>
-      <Image src={clinicImg} width='500' height='300' alt='reg-img'/>
+      <Image className='clinic-img' src={clinicImg} width='756' height='431' alt='reg-img'/>
     </section>
   )
 }

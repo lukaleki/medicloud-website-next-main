@@ -9,7 +9,7 @@ function HardwareAI() {
   return (
     <section className='hardware'>
       <div className="hardware-left">
-        <h1>უცხოური ექსპერტიზა</h1>
+        <h1>HARDWARE & AI</h1>
 
         <div className="hardware-card">
           <div className="hardware-frame"><Image src={appChip} width='40' height='40' alt='hardware-people' className='hardware-image' /></div>
@@ -31,7 +31,7 @@ function HardwareAI() {
       </div>
 
       <div className="hardware-right">
-        <Image src={hardwareImg} width='300' height='418' alt='AI-icon'/>
+        <Image className='hardware-img' src={hardwareImg} width='557' height='418' alt='AI-icon'/>
       </div>
     </section>
   )

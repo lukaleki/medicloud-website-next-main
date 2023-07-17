@@ -181,7 +181,13 @@ body {
     .reg-btn {
         @include button-config
     }
+
+    
 }
+
+    .clinic-img {
+        margin-top: 100px;
+    }
 }
 
 .med-partners {
@@ -233,16 +239,28 @@ body {
       }
 }
 
-@mixin offer-config {
+.what-we-offer {
+    width: 100%;
+    height: 600px;
+    margin-top: 75px;
     display: flex;
-        margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    h1 {
+        @include h1-config
+    }
 
+      .offer-cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
         .offer-card {
-            width: 30%;
             box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
             background-color: white;
-            margin-left: 22px;
             padding: 10px;
+            margin: 20px;
             border-radius: 20px;
             color: $primary-text-color;
 
@@ -263,27 +281,10 @@ body {
                 margin-top: 10px;
             }
         }
-}
 
-.what-we-offer {
-    width: 100%;
-    height: 600px;
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    h1 {
-        @include h1-config
-    }
+      }
 
-    .offer-cards-first-row {
-        @include offer-config
-        }
-    .offer-cards-second-row {
-        @include offer-config
-    }
+      
     }
 
   
@@ -348,7 +349,6 @@ body {
 
     .delivery-left {
         display: flex;
-        justify-content: center;
         align-items: center;
         padding: 75px;
         p {
@@ -358,10 +358,11 @@ body {
             
             .delivery-circle {
                 background-color: $primary-color;
+                color: white;
                 height: 80px;
                 width: 80px;
-                padding-top: 25px;
-                padding-left: 25px;
+                display: grid;
+                place-items: center;
                 border-radius: 100%;
             }
             .delivery-line {
@@ -372,8 +373,9 @@ body {
             }
             .delivery-circle-hollow {
                 border: 1px solid $primary-color;
-                padding-top: 25px;
-                padding-left: 25px;
+                color: $primary-color;
+                display: grid;
+                place-items: center;
                 height: 80px;
                 width: 80px;
                 border-radius: 100%;
@@ -393,28 +395,20 @@ body {
 
     .delivery-right {
         .delivery-android {
-            position: relative;
-            
-            animation-duration: 5s;
-            animation-name: android-animation;
-            animation-iteration-count: infinite;
+            position: absolute;
+            right: 400px;
 
         }
 
         .delivery-phone {
-            position: relative;
-            
-            animation-duration: 5s;
-            animation-name: phone-animation;
-            animation-iteration-count: infinite;
+            position: absolute;
+            right: 300px;
         }
 
         .delivery-map {
-            position: relative;
+            position: absolute;
+            right: 100px;
             z-index: -1;
-            animation-duration: 5s;
-            animation-name: map-animation;
-            animation-iteration-count: infinite;
         }
     }
 }
@@ -482,15 +476,17 @@ body {
 
 .foreign {
     display: flex;
-    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 100px;
     .foreign-left {
         margin-left: 150px;
         margin-top: 100px;
     }
 
     .foreign-right {
-        margin-top: 100px;
-        margin-left: 200px;
+        
 
         h1 {
             @include h1-config;
@@ -558,10 +554,12 @@ body {
 
 .hardware {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 100px;
 
     .hardware-left {
-        margin-top: 100px;
-        margin-left: 50px;
 
         h1 {
             @include h1-config;
@@ -577,6 +575,8 @@ body {
 
         .hardware-card {
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 50px;
 
             .hardware-frame {
@@ -610,19 +610,12 @@ body {
 
         .hardware-btn {
           @include button-config;
-          padding-right: 250px !important;
-          position: absolute;
-          left: 0px;
         }
-    }
-
-    .hardware-right {
-        margin-top: 75px;
-        margin-left: 200px;
     }
 }
 
 .questions {
+    margin-top: 150px;
 
     h1 {
         @include h1-config;
@@ -630,22 +623,17 @@ body {
         margin-bottom: 50px;
     }
 
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    
-    
-    .cards-row {
-        display: flex;
-        justify-content: center;
-        
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
 
         .card {
             box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
             width: 400px;
             height: 100px;
-            margin: 30px;
             border-radius: 10px;
+            margin-top: 30px;
             color: $primary-text-color;
             display: flex;
             justify-content: center;
@@ -656,15 +644,15 @@ body {
                 margin: 20px;
             }
 
-        }
-    }
+        }}
+    
 
     .contact {
-        width: 100%;
         margin-top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 100px;
 
         .contact-left {
             display: flex;
@@ -675,32 +663,26 @@ body {
                 margin-left: 15px;
                 margin-top: 20px;
                 background-color: $secondary-color;
+                
+                h3 {
+                  rotate: 90deg;
+                  margin-top: 75px;
+                  color: $secondary-color;
+                }
             }
 
-            h3 {
-                rotate: 90deg;
-                position: relative;
-                right: 310px;
-                bottom: 130px;
-                color: $secondary-color;
-            }
+            
         }
 
         .contact-right {
             width: 500px;
-            margin-right: 200px;
+            
             h3 {
                 margin-top: 25px;
 
             }
 
-            form {
-                display: flex;
-                input {
-                  margin-top: 25px;
-                  padding: 10px 50px 10px 40px;
-                }
-            }
+            
 
             
 
@@ -711,14 +693,23 @@ body {
                 box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
             }
 
-            
+            form {
+                display: flex;
+                gap: 10px;
+                margin-top: 20px;
+             
+                input {
+                  margin-top: 0px;
+                  padding: 10px 50px 10px 40px;
+                }
+            }
+
             .contact-username {
                 background-image: url(../public/user.png);
                 @include contact-input-config
             }
 
             .contact-email {
-                margin-left: 20px;
                 background-image: url(../public/email.png);
                 @include contact-input-config
             }
@@ -734,16 +725,16 @@ body {
 
             button {
               display: flex;
-              flex-direction: row;
               justify-content: center;
               align-items: center;
+              gap: 10px;
               padding: 20px 16px;
               width: 500px;
               margin-top: 20px;
               border-radius: 64px;
               color: $secondary-color;
               border: 2px solid $secondary-color;
-              gap: 10px;
+              
             }
 
         }
@@ -773,20 +764,40 @@ body {
         gap: 20px;
 
         .blog-left {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             .blog-info {
             position: relative;
             top: -100px;
-            margin-left: 30px;
             background-color: white;
             box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
-            width: 200px;
+            width: 500px;
             height: 150px;
             border-radius: 24px;
             padding: 10px;
 
+            .blog-info {
+                .blog-info-description {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 40px;
+    
+                    h4 {
+                        margin-left: 40px;
+                        color: $secondary-color;
+                    }
+                    
+                }
+            }
+
             .blog-info-description {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 margin-top: 40px;
 
                 h4 {
@@ -798,12 +809,17 @@ body {
         }}   
 
         .blog-right {
+            height: 375px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             .blog-info-card {
                 width: 560px;
                 height: 107px;
                 display: flex;
                 padding: 20px;
-                margin-top: 20px;
                 border-radius: 16px;
                 box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
 
@@ -825,6 +841,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     a {
         color: $primary-color;
@@ -863,6 +880,9 @@ footer {
 
             .footer-social {
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
                 margin-top: 30px;
                 .footer-icon {
                   cursor: pointer;
@@ -873,7 +893,6 @@ footer {
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  margin-left: 20px;
                 }
             }
         }
@@ -900,6 +919,8 @@ footer {
 
             .sub-wrapper {
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 margin-top: 40px;
             }
             p {
@@ -907,13 +928,15 @@ footer {
             }
 
             form {
+                display: flex;
                 box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
-                width: 100px;
+                width: 275px;
                 height: 40px;
-                border-radius: 10px;
+                border-radius: 4px;
                 margin-top: 20px;
                 input {
                     border: none;
+
 
                 }
 
@@ -944,6 +967,8 @@ footer {
 
     .footer-terms-conditions {
         display: flex;
+        align-items: center;
+        justify-content: center;
         color: $secondary-color;
         margin-bottom: 10px;
 
@@ -952,46 +977,3 @@ footer {
         }
     }
 }
-
-
-@keyframes android-animation {
-    0% {
-        right: 400px;
-    }
-    50% {
-        right: 300px;
-    }
-    100% {
-        right: 400px;
-    }
-}
-
-@keyframes phone-animation {
-    0% {
-        margin-top: 0px;
-        scale: 1;
-    }
-    50% {
-        margin-top: 100px;
-        scale: 1.1;
-    }
-    100% {
-        margin-top: 0px;
-        scale: 1;
-    }
-}
-
-@keyframes map-animation {
-    0% {
-        margin: 0;
-    }
-    50% {
-        margin-top: 50px;
-        margin-left: 150px;
-    }
-    100% {
-        margin: 0;
-    }
-}
-
-

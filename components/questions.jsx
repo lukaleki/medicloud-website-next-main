@@ -8,22 +8,20 @@ function Questions() {
   return (
     <section id='questions' className='questions'>
       <h1>ხშირად დასმული <br /> კითხვები</h1>
-      <div className="cards">
-        <div className="cards-row">
+      <div className="cards"> 
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>ვინ ვართ ჩვენ?</h2></div>
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>რამდენად გამოსადეგია ჩვენი აპლიკაცია?</h2></div>
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>როგორ დავარეგისტრირო კლინიკა?</h2></div>
-        </div>
-        <div className="cards-row">
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>რას მიიღებთ მედიქლაუდში ჩართვით?</h2></div>
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>როგორ გადმოვწერო აპლიკაცია?</h2></div>
         <div className="card"><Image className='vector' src={vectorDown} width='19' height='20' alt='vector-down'/><h2>რას გთავაზობთ?</h2></div>
-        </div>
       </div>
 
       <div id='contact' className="contact">
         <div className="contact-left">
-          <Image className='clinic-map' src={clinicMap} width='300' height='551' alt='clinic-map'/> <div className="contact-line"></div> <h3>კონტაქტი</h3>
+          <Image className='clinic-map' src={clinicMap} width='700' height='551' alt='clinic-map'/> 
+          <div className="contact-line"><h3>კონტაქტი</h3></div> 
+          
         </div>
         <div className="contact-right">
             <h2>გაქვთ შეკითხვები?</h2>

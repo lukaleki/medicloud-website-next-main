@@ -10,7 +10,7 @@ function Foreign() {
   return (
     <section className='foreign'>
       <div className="foreign-left">
-      <Image src={ForeignExp} width='200' height='482' alt='foreign-exp' />
+      <Image className='foreign-exp-img' src={ForeignExp} width='471' height='482' alt='foreign-exp' />
       </div>
 
       <div className="foreign-right">
