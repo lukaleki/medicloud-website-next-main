@@ -15,7 +15,7 @@ import sendWhite from "../public/send.png";
 function Footer() {
   return (
     <footer>
-        <a href="#">თავში დაბრუნება <Image src={collapse} width='22' height='22' alt='arrow-right'/></a>   
+        <a className='footer-main-link' href="#">თავში დაბრუნება <Image src={collapse} width='22' height='22' alt='arrow-right'/></a>   
 
       <div className="footer-content">
         <div className="footer-medicloud-info">

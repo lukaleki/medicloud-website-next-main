@@ -1,4 +1,8 @@
-@media (min-width: 378px) and (max-width: 1024px) {
+$primary-text-color: rgb(99,115,129);
+$primary-color: #FFAB00;
+$secondary-color: #00AB55;
+
+@media (min-width: 376px) and (max-width: 1024px) {
 
   * {
     h1 {
@@ -21,12 +25,12 @@
       }
     }
 
-    li {
-      margin-left: 20px;
-    }
-
     h3 {
       font-size: 15px;
+    }
+
+    li {
+      margin-left: 13px !important;
     }
     
     
@@ -138,11 +142,15 @@
 
       form {
         flex-direction: column;
-        width: 100%;
+
+        input {
+          width: 400px !important;
+        }
+        
       }
 
       textarea {
-        width: 100%;
+        width: 400px !important;
       }
       button {
         font-size: 15px !important;
@@ -240,13 +248,176 @@
           button {
             width: 82px !important;
             font-size: 11px !important;
+            margin-right: 30px;
           }
-        }
-        
+        }   
       }
+    }  
+  }   
+}
+
+
+@media (max-width: 376px) {
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar {
+    box-shadow: none;
+    .nav-label {
+      h1 {display: none;}
+    }
+    .georgian-flag {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+  }
+
+  .clinic-registration {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+
+    margin: 0px;
+    .reg-left {
+      display: block;
+    }
+    h1 {
+      width: 325px !important;
+      font-size: 25px !important;
+      margin-right: 325px !important;
+    }
+    p {
+      width: 325px !important;
+    }
+    .clinic-reg-img {
+      width: 357px;
+      height: 273px;
+    }
+    .reg-btn {
+      font-size: 17px !important;
+      margin-top: 285px !important;
+    }
+  }
+
+  .med-partners {
+    h1 {
+      font-size: 24px !important;
+    }
+
+    .slider {
+      height: 200px !important;
+      .slide {
+        margin-left: 300px !important;
+        font-size: 14px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .active {
+        margin-left: 125px !important;
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  // .what-we-offer {
+  //   .offer-cards {
+  //     width: 375px !important;
+  //     background-color: rgb(244,246,248);
+  //     display: flex !important;
+  //     justify-content: center;
+  //     align-items: center;
+  //     overflow-x: hidden;
+
+  //     .offer-card {
+  //       margin-left: 100px;
+  //       width: 350px !important;
+  //     }
+  //   }
+
+    
+    
+  // }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+    
+    .card {
+      width: 343px !important;
+      font-size: 13px !important;
+    }
+  }
+
+  .contact {
+    gap: 50px !important;
+    display: block;
+
+
+.contact-right {
+  gap: 50px !important;
+  width: 375px !important;
+
+  h3 {
+    font-size: 15px;
+  }
+
+  form {
+    flex-direction: column;
+
+    input {
+      width: 400px !important;
     }
     
   }
 
+  textarea {
+    width: 400px !important;
+  }
+  button {
+    font-size: 15px !important;
+    width: 400px !important;
+  }
+}
+}
+
+  .blog  {
     
+    .blog-content {
+      margin-top: 200px;
+      display: block;
+
+      .blog-info {
+        width: 305px !important;
+        height: 102px !important;
+        font-size: 10px;
+
+        .blog-info-description {
+          margin-top: 25px !important;
+        }
+      }
+
+      .blog-info-card {
+        width: 343px !important;
+        height: 82px !important;
+        font-size: 12px;
+      }
+    }
+  }
+
+  footer {
+    height: 1325px;
+
+    .footer-main-link {
+      margin-top: 100px;
+    }
+
+    .footer-content {
+      display: grid;
+      text-align: center;
+
+    }
+  }
 }
