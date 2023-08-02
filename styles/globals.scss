@@ -5,6 +5,10 @@ $primary-color: #FFAB00;
 $secondary-color: #00AB55;
 
 @mixin button-config {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     color: $secondary-color;
     position: absolute;
     left: 0px;
@@ -17,6 +21,14 @@ $secondary-color: #00AB55;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     cursor: pointer;
+
+    @media screen and (max-width: 376px) {
+        left: 11px;
+        font-size: 16px !important;
+        padding: 10px 40px 10px 40px;
+        border-radius: 10px;
+    }
+
 }
 
 @mixin h1-config {
@@ -244,80 +256,31 @@ body {
       }
 }
 
-// .what-we-offer {
-//     width: 100%;
-//     height: 600px;
-//     margin-top: 75px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-    
-    
-//     h1 {
-//         @include h1-config
-//     }
-
-//       .offer-cards {
-//         display: grid;
-//         grid-template-columns: auto auto auto;
-//         .offer-card {
-//             box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
-//             background-color: white;
-//             padding: 10px;
-//             margin: 20px;
-//             border-radius: 20px;
-//             color: $primary-text-color;
-
-//             .icon-frame {
-//                 background-color: $primary-color;
-//                 width: 64px;
-//                 height: 64px;
-//                 border-radius: 16px;
-//                 display: grid;
-//                 place-items: center;
-//             }
-
-//             h3 {
-//                 margin-top: 10px;
-//             }
-
-//             p {
-//                 margin-top: 10px;
-//             }
-//         }
-
-//       }
-      
-      
-//     }
-
 .slider-container {
     margin-top: 75px;
     overflow-x: hidden;
     position: relative;
-    background-color: rgb(244,246,248);
-  }
+    background-color: rgb(213, 211, 211);
+  
   
   .offer-cards {
     display: grid;
+    place-items: center;
     grid-template-columns: auto auto auto;
   
     @media screen and (max-width: 376px) {
       display: flex;
-      width: 100%;
       transition: transform 0.3s ease;
     }
   
     .offer-card {
-        width: 350px !important;
       background-color: white;
       padding: 10px;
       margin: 20px;
-      border-radius: 20px;
       color: $primary-text-color;
   
       .icon-frame {
+        margin-left: 60px;
         background-color: $primary-color;
         width: 64px;
         height: 64px;
@@ -327,30 +290,64 @@ body {
       }
   
       h3 {
+        margin-left: 60px;
         margin-top: 10px;
       }
   
       p {
+        margin-left: 60px;
         margin-top: 10px;
         width: 80%;
       }
     }
   
     @media screen and (max-width: 376px) {
+
+        .offer-cards {
+            background-color: white !important;
+        }
       .offer-card {
         flex: 0 0 100%;
-        margin: 0; /* Set margin to 0 to eliminate spacing */
-        padding: 0 5px; /* Add some spacing between cards in slider mode */
+        margin: 0;
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
       }
     }
   }
+} 
   
   #prevBtn,
   #nextBtn {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    background-color: #ffaa0057;
+    border: none;
+    padding-top: 3px;
+
+    img {
+        width: 10px;
+        height: 25px;
+    }
+  }
+
+  #nextBtn {
+    right: 20px;
+    padding-left: 3px;
+  }
+
+  #prevBtn {
+    left: 20px;
+    padding-right: 3px;
   }
   
 

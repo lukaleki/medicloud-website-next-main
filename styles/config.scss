@@ -36,7 +36,6 @@ $secondary-color: #00AB55;
     
 
     .drop-lang {
-      margin-left: 30px;
       
       .georgian-flag {
         display: none;
@@ -268,12 +267,19 @@ $secondary-color: #00AB55;
     .nav-label {
       h1 {display: none;}
     }
-    .georgian-flag {
-      display: none;
-    }
+    
     .nav-links {
       display: none;
     }
+
+    .drop-lang {
+      margin-left: 0px;
+      .georgian-flag {
+      display: none;
+    }
+    }
+    
+    
   }
 
   .clinic-registration {
@@ -291,6 +297,7 @@ $secondary-color: #00AB55;
       margin-right: 325px !important;
     }
     p {
+      text-align: center;
       width: 325px !important;
     }
     .clinic-reg-img {
@@ -322,25 +329,6 @@ $secondary-color: #00AB55;
       }
     }
   }
-
-  // .what-we-offer {
-  //   .offer-cards {
-  //     width: 375px !important;
-  //     background-color: rgb(244,246,248);
-  //     display: flex !important;
-  //     justify-content: center;
-  //     align-items: center;
-  //     overflow-x: hidden;
-
-  //     .offer-card {
-  //       margin-left: 100px;
-  //       width: 350px !important;
-  //     }
-  //   }
-
-    
-    
-  // }
 
   .cards {
     grid-template-columns: repeat(1, 1fr) !important;
