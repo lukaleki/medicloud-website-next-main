@@ -35,6 +35,10 @@ $secondary-color: #00AB55;
     font-size: 40px;
     color: $secondary-color;
     text-transform: uppercase;
+
+    @media screen and (max-width: 376px) {
+        font-size: 25px !important;
+    }
 }
 
 * {
@@ -195,6 +199,10 @@ body {
         @include button-config;
         margin-top: 400px;
     }
+    .web-btn {
+        @include button-config;
+        margin-top: 400px;
+    }
 
     
 }
@@ -278,6 +286,7 @@ body {
       padding: 10px;
       margin: 20px;
       color: $primary-text-color;
+      border-radius: 10px;
   
       .icon-frame {
         margin-left: 60px;
@@ -309,6 +318,7 @@ body {
       .offer-card {
         flex: 0 0 100%;
         margin: 0;
+        border-radius: 0px !important;
 
         h3 {
             font-size: 16px;

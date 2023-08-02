@@ -292,8 +292,8 @@ $secondary-color: #00AB55;
       display: block;
     }
     h1 {
-      width: 325px !important;
-      font-size: 25px !important;
+      text-align: center;
+      width: 350px !important;
       margin-right: 325px !important;
     }
     p {
@@ -301,12 +301,21 @@ $secondary-color: #00AB55;
       width: 325px !important;
     }
     .clinic-reg-img {
-      width: 357px;
-      height: 273px;
+      width: 357px !important;
+      height: 273px !important;
+    }
+    .clinic-img {
+      margin-top: 40px !important;
+      width: 307px !important;
+      height: 175px !important;
     }
     .reg-btn {
       font-size: 17px !important;
       margin-top: 285px !important;
+    }
+    .web-btn {
+      padding: 10px 75px 10px 75px !important;
+      margin-top: 250px !important;
     }
   }
 
@@ -328,6 +337,94 @@ $secondary-color: #00AB55;
         font-size: 20px !important;
       }
     }
+  }
+
+  .phone-app {
+    margin-top: 250px;
+    gap: 0px;
+    display: grid;
+    place-items: center;
+
+    .mobile-wrapper {
+      width: 300px !important;
+      height: 300px !important;
+      margin-right: 75px;
+
+      img {
+        width: 170px;
+        height: 377px;
+        margin-bottom: 120px;
+      }
+    }
+
+    .mobile-right {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+
+      p {
+        width: 90% !important;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+      img {
+        width: 165px;
+        height: 85px;
+      }
+    }
+  }
+
+  .med-delivery {
+    display: grid;
+    h1 {
+      font-size: 25px !important;
+      margin-left: 10px !important;
+    }
+
+    .delivery-wrapper {
+      display: grid;
+      place-items: center;
+    }
+
+    .delivery-left {
+      padding: 0px;
+      margin-top: 30px;
+      justify-content: center;
+      gap: 10px;
+
+      .delivery-left-first-part {
+        display: grid;
+        place-items: center;
+
+        .delivery-line {
+          margin-left: 10px;
+
+        }
+      }
+
+      .delivery-left-second-part {
+        margin-left: 0px;
+      }
+
+      h2 {
+        font-size: 17px;
+      }
+
+      p {
+        margin-top: 10px;
+        width: 80%;
+        font-size: 14px;
+      }
+
+      
+    }
+    
+      .delivery-btn {
+        padding: 10px 100px 10px 100px !important;
+      }
   }
 
   .cards {
