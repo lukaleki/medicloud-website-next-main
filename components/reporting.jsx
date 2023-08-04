@@ -18,30 +18,38 @@ function Reporting() {
       
       <div className="reporting-right">
         <h1>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h1>
-        <div className="reporting-cards-first-row">
+          <div className="reporting-card-wrapper">
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appWeb} width='32' height='32' alt='app-web' className='reporting-image' /></div>
-            <h3>სამედიცინო მუშაკები</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+            <div className="icon-frame"><Image src={appWeb} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="text-wrapper">
+              <h3>სამედიცინო მუშაკები</h3>
+              <p>სამედიცინო მუშაკების წაშლა, დამატება, დეპარტამენტებში დანიშვნა...</p>
+            </div> 
+            
             </div>
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appDelivery} width='32' height='32' alt='app-web' className='reporting-image' /></div>
-            <h3>დეპარტამენტები</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+            <div className="icon-frame"><Image src={appDelivery} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="text-wrapper">
+              <h3>დეპარტამენტები</h3>
+              <p>დეპარტამენტების შექმნა, წაშლა, შეცვლა...</p>
             </div>
-        </div>
-        <div className="reporting-cards-second-row">
-            <div className="reporting-card">
-            <div className="icon-frame"><Image src={appMobile} width='32' height='32' alt='app-web' className='reporting-image' /></div>
-            <h3>ექიმების მიმოსვლა</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
             </div>
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appPerson} width='32' height='32' alt='app-web' className='reporting-image' /></div>
-            <h3>მკურნალობების დინამიკა</h3>
-            <p>ცვბცვბცვბცვბცვბვცბ ცვ ბცბტყუყიუტყ ტზხ ყიტყი ტცხვყ უტყუტფჰფფგჰვბვნ ვნვბნ</p>
+            <div className="icon-frame"><Image src={appMobile} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="text-wrapper">
+              <h3>ექიმების მიმოსვლა</h3>
+              <p>ექიმების მიმოსვლის ნახვა, სამედიცინო მუშაკების მოწვევა და დამატება...</p>
             </div>
-        </div>
+            </div>
+            <div className="reporting-card">
+            <div className="icon-frame"><Image src={appPerson} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="text-wrapper">
+              <h3>მკურნალობების დინამიკა</h3>
+              <p>მკურნალობების დინამიკის ნახვა, გაფილტვრა თარიღის მიხედვით...</p>
+            </div>
+            </div>
+          </div>
+            
       </div>
     </section>
   )

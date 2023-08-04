@@ -378,20 +378,22 @@ $secondary-color: #00AB55;
   }
 
   .med-delivery {
-    display: grid;
+    flex-direction: column-reverse;
+
     h1 {
       font-size: 25px !important;
       margin-left: 10px !important;
+      text-align: center;
     }
 
-    .delivery-wrapper {
+    .delivery-left-wrapper {
       display: grid;
       place-items: center;
     }
 
     .delivery-left {
       padding: 0px;
-      margin-top: 30px;
+      margin-top: 400px;
       justify-content: center;
       gap: 10px;
 
@@ -421,10 +423,69 @@ $secondary-color: #00AB55;
 
       
     }
+
+    .delivery-right {
+      .delivery-android {
+        margin-top: 100px;
+        left: 25px;
+        right: 0px;
+        width: 204px !important;
+        height: 318px !important;
+        z-index: 2;
+      }
+
+      .delivery-phone {
+        position: absolute;
+        margin-top: 90px;
+        left: 125px;
+        right: 0px;
+        width: 140px !important;
+        height: 288px !important;
+      }
+
+      .delivery-map {
+        position: absolute;
+        margin-top: 180px;
+        left: 175px;
+        right: 0px;
+        width: 164px !important;
+        height: 230px !important;
+      }
+
+
+    }
     
       .delivery-btn {
+        margin-top: 850px !important;
         padding: 10px 100px 10px 100px !important;
       }
+  }
+
+  .reporting {
+    display: grid;
+
+
+    .reporting-right {
+
+
+      .reporting-card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: normal;
+
+        .reporting-card {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
+          .icon-frame {
+            width: 200px !important;
+            height: 100px !important;
+          }
+        }
+      }
+    }
   }
 
   .cards {

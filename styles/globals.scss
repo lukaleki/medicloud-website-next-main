@@ -65,7 +65,7 @@ body {
 
 .navbar {
   background-color: white;
-  width: 80%;
+  width: 85%;
   height: 75px;
   border-radius: 15px;
   box-shadow: -7px 10px 58px -6px rgba(110,110,110,0.75);
@@ -487,36 +487,6 @@ body {
     }
 }
 
-@mixin reporting-config {
-    display: flex;
-        margin-top: 25px;
-
-        .reporting-card {
-            width: 50%;
-            background-color: white;
-            margin-left: 22px;
-            padding: 10px;
-            color: $primary-text-color;
-
-            .icon-frame {
-                background-color: $primary-color;
-                width: 64px;
-                height: 64px;
-                border-radius: 16px;
-                display: grid;
-                place-items: center;
-            }
-
-            h3 {
-                margin-top: 10px;
-            }
-
-            p {
-                margin-top: 10px;
-            }
-        }
-}
-
 .reporting {
     display: flex;
     align-items: center;
@@ -536,13 +506,39 @@ body {
         margin-top: 70px;
         h1 {
           @include h1-config;
-          margin-left: 30px;
+          text-align: center;
         }
-        .reporting-cards-first-row {
-            @include reporting-config
-        }
-        .reporting-cards-second-row {
-            @include reporting-config
+        
+        .reporting-card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+
+            .reporting-card {
+                width: 75%;
+                background-color: white;
+                margin-left: 22px;
+                padding: 10px;
+                color: $primary-text-color;
+    
+                .icon-frame {
+                    background-color: $primary-color;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 16px;
+                    display: grid;
+                    place-items: center;
+                }
+    
+                h3 {
+                    margin-top: 10px;
+                }
+    
+                p {
+                    margin-top: 10px;
+                }
+            }
+            
         }
 
     }
