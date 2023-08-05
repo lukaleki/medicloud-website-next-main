@@ -11,7 +11,7 @@ function Reporting() {
   return (
     <section className='reporting'>
       <div className="reporting-left">
-      <Image className='delivery-img' src={laptop} width='616' height='348' alt='laptop'/> <br />
+      <Image className='reporting-img' src={laptop} width='616' height='348' alt='laptop'/> <br />
       <button className='reporting-btn'>საიტზე გადასვლა <Image src={diagonalArrow} width='14' height='14' alt='diagonal-arrow'/></button>
       </div>
 
@@ -20,7 +20,7 @@ function Reporting() {
         <h1>რეპორტინგის და <br /> მონიტორინგის აპლიკაცია</h1>
           <div className="reporting-card-wrapper">
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appWeb} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="icon-frame-wrapper"><div className="icon-frame"><Image src={appWeb} width='37' height='37' alt='app-web' className='reporting-image' /></div></div>
             <div className="text-wrapper">
               <h3>სამედიცინო მუშაკები</h3>
               <p>სამედიცინო მუშაკების წაშლა, დამატება, დეპარტამენტებში დანიშვნა...</p>
@@ -28,21 +28,21 @@ function Reporting() {
             
             </div>
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appDelivery} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="icon-frame-wrapper"><div className="icon-frame"><Image src={appDelivery} width='37' height='37' alt='app-web' className='reporting-image' /></div></div>
             <div className="text-wrapper">
               <h3>დეპარტამენტები</h3>
               <p>დეპარტამენტების შექმნა, წაშლა, შეცვლა...</p>
             </div>
             </div>
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appMobile} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+              <div className="icon-frame-wrapper"><div className="icon-frame"><Image src={appMobile} width='37' height='37' alt='app-web' className='reporting-image' /></div></div>
             <div className="text-wrapper">
               <h3>ექიმების მიმოსვლა</h3>
               <p>ექიმების მიმოსვლის ნახვა, სამედიცინო მუშაკების მოწვევა და დამატება...</p>
             </div>
             </div>
             <div className="reporting-card">
-            <div className="icon-frame"><Image src={appPerson} width='37' height='37' alt='app-web' className='reporting-image' /></div>
+            <div className="icon-frame-wrapper"><div className="icon-frame"><Image src={appPerson} width='37' height='37' alt='app-web' className='reporting-image' /></div></div>
             <div className="text-wrapper">
               <h3>მკურნალობების დინამიკა</h3>
               <p>მკურნალობების დინამიკის ნახვა, გაფილტვრა თარიღის მიხედვით...</p>

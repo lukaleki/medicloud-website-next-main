@@ -258,10 +258,6 @@ $secondary-color: #00AB55;
 
 @media (max-width: 376px) {
 
-  img {
-    width: 20px;
-    height: 20px;
-  }
   .navbar {
     box-shadow: none;
     .nav-label {
@@ -379,6 +375,7 @@ $secondary-color: #00AB55;
 
   .med-delivery {
     flex-direction: column-reverse;
+    margin-top: 25px;
 
     h1 {
       font-size: 25px !important;
@@ -456,34 +453,167 @@ $secondary-color: #00AB55;
     }
     
       .delivery-btn {
-        margin-top: 850px !important;
-        padding: 10px 100px 10px 100px !important;
+        position: static;
+        padding: 10px 96px 10px 96px !important;
       }
+  }
+
+  @mixin icon-frame-config {
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .reporting {
     display: grid;
+    margin-top: 25px;
+
+    
+      .reporting-img {
+        position: absolute;
+        width: 339px;
+        height: 192px;
+        margin-top: 175px;
+        margin-left: 5px !important;
+
+      }
+    
 
 
     .reporting-right {
+      h1 {
+        font-size: 22px !important;
+      }
 
 
       .reporting-card-wrapper {
+        margin-top: 250px;
         grid-template-columns: repeat(1, 1fr);
         place-items: normal;
 
         .reporting-card {
-          width: 80%;
+          width: 100%;
+          margin-left: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 20px;
+          margin-top: 20px;
+          padding: 0px;
+
+          h3 {
+            font-size: 17px;
+          }
+
+          p {
+            font-size: 14px;
+          }
 
           .icon-frame {
-            width: 200px !important;
-            height: 100px !important;
+            width: 74px;
+            height: 74px;
+
+            @include icon-frame-config()          
           }
         }
+      }
+    }
+
+    .reporting-btn {
+      margin-top: 875px !important;
+      padding: 10px 75px 10px 75px !important;
+      
+    }
+  }
+
+  .foreign {
+    display: grid;
+    gap: 0px;
+
+    .foreign-left {
+      margin-top: 50px;
+      img {
+        position: absolute;
+        width: 276.78px;
+        height: 282.73px;
+        right: 40px;
+        margin-top: 75px;
+      }
+    }
+
+    .foreign-right {
+      display: grid;
+      place-items: center;
+
+      .foreign-cards {
+        margin-top: 300px;
+        .foreign-card {
+        margin-left: 7px;
+        align-items: center;
+
+        .foreign-frame {
+          width: 74px;
+          height: 74px;
+          margin-right: 10px;
+
+          @include icon-frame-config()
+        }
+
+        p {
+          font-size: 13px;
+          
+        }
+      }
+      }
+    
+      .foreign-btn {
+        position: static;
+        margin-top: 35px;
+        padding: 10px 90px 10px 90px !important;
+        border-radius: 10px;
+        border: 1px solid #00AB55;
+        font-size: 16px;
+      }  
+    }
+  }
+
+  .hardware {
+    gap: 0px;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    .hardware-left {
+      display: grid;
+      place-items: center;
+      
+      .hardware-cards {
+        margin-top: 200px;
+
+        .hardware-card {
+          gap: 10px;
+        }
+        
+
+        .hardware-frame {
+          margin-right: 0px;
+          margin-left: 7px;
+        }
+      }
+
+      .hardware-btn {
+        position: static;
+        padding: 10px 90px 10px 90px
+      }
+    }
+
+    .hardware-right {
+      img {
+        width: 323.13px;
+        height: 231.83px;
+        position: absolute;
+        right: 10px;
+        margin-top: 50px;
       }
     }
   }

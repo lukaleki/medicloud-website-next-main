@@ -4,7 +4,6 @@ import ForeignExp from '../public/foreign-exp.png'
 import foreignPeople from '../public/foreign-people.svg'
 import foreignDoctor from '../public/foreign-doctor.png'
 import diagonalArrow from '../public/diagonal-arrow.png'
-import alert from '../public/alert.png'
 
 function Foreign() {
   return (
@@ -16,26 +15,22 @@ function Foreign() {
       <div className="foreign-right">
         <h1>უცხოური ექსპერტიზა</h1>
 
-        <div className="foreign-card">
-          <div className="foreign-frame"><Image src={foreignPeople} width='40' height='40' alt='foreign-people' className='foreign-image' /></div>
-          <div className="foreign-card-text">
-            <h3>ექიმები</h3>
-            <p>პროფესიული ცოდნის გაზიარება და <br /> ონლაინ კონსილიუმების მოწვევა...</p>
-          </div>
-        </div>
+        <div className="foreign-cards">
 
-        <div className="foreign-card">
-        <div className="foreign-frame"><Image src={foreignDoctor} width='40' height='40' alt='foreign-doctor' className='foreign-image' /></div>
-          <div className="foreign-card-text">
-            <h3>ექიმები</h3>
-            <p>პროფესიული ცოდნის გაზიარება და <br /> ონლაინ კონსილიუმების მოწვევა...</p>
+          <div className="foreign-card">
+            <div className="icon-frame-wrapper"><div className="foreign-frame"><Image src={foreignPeople} width='40' height='40' alt='foreign-people' className='foreign-image' /></div></div>   
+            <div className="foreign-card-text">
+              <h3>პაციენტები</h3>
+              <p>კვლევების და დიაგნოზების გაზიარება და გადამოწმება...</p>
+            </div>
           </div>
-        </div>
 
-        <div className="foreign-card">
-        <div className="foreign-frame-alert"><Image src={alert} width='24' height='24' alt='alert' className='foreign-allert' /></div>
-          <div className="foreign-alert-text">
-            <h3>მალე...</h3>
+          <div className="foreign-card">
+          <div className="icon-frame-wrapper"><div className="foreign-frame"><Image src={foreignDoctor} width='40' height='40' alt='foreign-doctor' className='foreign-image' /></div></div>
+            <div className="foreign-card-text">
+              <h3>ექიმები</h3>
+              <p>პროფესიული ცოდნის გაზიარება და <br /> ონლაინ კონსილიუმების მოწვევა...</p>
+            </div>
           </div>
         </div>
 

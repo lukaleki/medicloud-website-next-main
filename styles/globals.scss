@@ -494,7 +494,7 @@ body {
 
     .reporting-left {
         
-        .delivery-img {
+        .reporting-img {
             margin-left: 30px;
         }
         .reporting-btn {
@@ -585,22 +585,6 @@ body {
                 margin-right: 25px;
             }
 
-            .foreign-frame-alert {
-                background-color: $primary-color;
-                width: 56px;
-                height: 56px;
-                border-radius: 44px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 25px;
-
-                
-            }
-
-            .foreign-alert-text {
-                margin-top: 15px;
-            }
         }
 
         .foreign-btn {
