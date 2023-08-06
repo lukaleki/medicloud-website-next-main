@@ -5,6 +5,7 @@ $primary-color: #FFAB00;
 $secondary-color: #00AB55;
 
 @mixin button-config {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -690,7 +691,6 @@ body {
             margin-top: 30px;
             color: $primary-text-color;
             display: flex;
-            justify-content: center;
             align-items: center;
 
 

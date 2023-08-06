@@ -25,7 +25,7 @@ function Questions() {
         </div>
         <div className="contact-right">
             <h2>გაქვთ შეკითხვები?</h2>
-            <h3>შეავსეთ ქვემოთ მითითებული საკონტაქტო ფორმა <br /> და გამოგვიგზავნეთ კითხვები</h3>
+            <h3>შეავსეთ ქვემოთ მითითებული საკონტაქტო ფორმა და გამოგვიგზავნეთ კითხვები</h3>
             <form>
               <input className='contact-username' placeholder='სახელი' type='text' />
               <input className='contact-email' placeholder='ელ-ფოსტა' type='email'/> 
