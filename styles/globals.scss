@@ -911,6 +911,7 @@ footer {
         gap: 30px;
         margin-top: 50px;
 
+
         .footer-medicloud-info {
             width: 25%;
             .info-title {
@@ -918,12 +919,10 @@ footer {
                 color: $primary-color;
                 .title-wrapper {
                     margin-left: 20px;
-                    hr {
-                        width: 158px;
-                        border-color: $primary-color;
-                    }
-                    h4 {
-                        margin-left: 5px;
+                    .title-line {
+                        width: 167px;
+                        height: 1px;
+                        background-color: $primary-color;
                     }
                 }
             }
@@ -967,6 +966,7 @@ footer {
             margin-top: 20px;
             text-align: left;
             display: flex;
+            align-items: center;
         }
 
         .footer-sub {

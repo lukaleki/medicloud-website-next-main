@@ -11,8 +11,44 @@ import email from "../public/email-orange.png";
 import location from "../public/location-orange.png";
 import sendIcon from "../public/send-orange.png";
 import sendWhite from "../public/send.png";
+import sliderArrow from '../public/slider-arrow.png' 
 
 function Footer() {
+  
+  const [isSlider, setIsSlider] = React.useState(false)
+  const [dropdownSub, setDropdownSub] = React.useState(false) 
+  const [dropdownLinks, setDropdownLinks] = React.useState(false) 
+  const [dropdownContact, setDropdownContact] = React.useState(false) 
+
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsSlider(window.innerWidth <= 376);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const HandleLinksClick = () => {
+    setDropdownLinks(!dropdownLinks)
+    setDropdownSub(false)
+    setDropdownContact(false)
+  }
+  
+  const HandleContactClick = () => {
+    setDropdownContact(!dropdownContact)
+    setDropdownSub(false)
+    setDropdownLinks(false)
+  }
+
+  const HandleSubClick = () => {
+    setDropdownSub(!dropdownSub)
+    setDropdownLinks(false)
+    setDropdownContact(false)
+  }
+
   return (
     <footer>
         <a className='footer-main-link' href="#">თავში დაბრუნება <Image src={collapse} width='22' height='22' alt='arrow-right'/></a>   
@@ -23,11 +59,13 @@ function Footer() {
                 <Image src={medicloud} width='63' height='64' alt='medicloud-icon'/>
                 <div className="title-wrapper">
                     <h1>medicloud</h1>
-                    <hr />
+                    <div className="title-line"></div>
                     <h4>healthcare platform</h4>
                 </div>
             </div>
             <p>კომპანიის შესახებ ტექსტი, ცბცვბვცბვცბ ვცვბცვნვბნხბცბბ ცბცვბტ გრეტყეჯრი  დფგიდფოგმდფ ვცბვცბ ვბვბნვბნნვნვბ ვნვბნვბვნ</p>
+            
+            
           <div className="footer-social">
            <div className="footer-icon"><Image src={facebook} width='8' height='14' alt='facebook-icon'/></div> 
            <div className="footer-icon"><Image src={instagram} width='13' height='13' alt='instagram-icon'/></div> 
@@ -35,7 +73,14 @@ function Footer() {
            <div className="footer-icon"><Image src={youtube} width='17' height='12' alt='youtube-icon'/></div> 
           </div>
         </div>
-        <div className="footer-links">
+        {isSlider && (
+              <dropdown>
+                <button onClick={HandleLinksClick} className="dropdown-btn">
+                  მნიშვნელოვანი ლინკები <Image className={dropdownLinks ? 'dropdown-arrow-down' : 'dropdown-arrow-up' } src={sliderArrow} width='15' height='25' alt='dropdown-arrow-icon'/>
+                </button>
+              </dropdown>
+        )}
+        <div className={dropdownLinks ? "footer-links active" : "footer-links disabled"}>
             <h3>მნიშვნელოვანი ლინკები</h3>
             <hr />
             <a href="#">მთავარი გვერდი</a>
@@ -44,14 +89,28 @@ function Footer() {
             <a href="#services">სერვისები</a>
             <a href="#aboutUs">ჩვენს შესახებ</a>
         </div>
-        <div className="footer-contact">
+        {isSlider && (
+              <dropdown>
+                <button onClick={HandleContactClick} className="dropdown-btn">
+                  კონტაქტი <Image className={dropdownContact ? 'dropdown-arrow-down' : 'dropdown-arrow-up' } src={sliderArrow} width='15' height='25' alt='dropdown-arrow-icon'/>
+                </button>
+              </dropdown>
+        )}
+        <div className={dropdownContact ? 'footer-contact active' : ' footer-contact disabled'}>
             <h3>კონტაქტი</h3>
             <hr />
             <div className="footer-contact-links"><Image src={call} width='32' height='32' alt='call-icon'/>+021213414115151</div> 
             <div className="footer-contact-links"><Image src={email} width='32' height='32' alt='email-icon'/>hello1234@info.com</div> 
             <div className="footer-contact-links"><Image src={location} width='32' height='32' alt='location-icon'/><div className="link-wrapper">ალექსანდრე <br /> გობრონიშვილის გამზირი 47</div></div> 
         </div>
-        <div className="footer-sub">
+        {isSlider && (
+              <dropdown>
+                <button onClick={HandleSubClick} className="dropdown-btn">
+                  გამოწერა <Image className={dropdownSub ? 'dropdown-arrow-down' : 'dropdown-arrow-up' } src={sliderArrow} width='15' height='25' alt='dropdown-arrow-icon'/>
+                </button>
+              </dropdown>
+        )}
+        <div className={dropdownSub ? "footer-sub active" : "footer-sub disabled"}>
             <h3>გამოწერა</h3>
             <hr />
             <div className="sub-wrapper">
@@ -69,10 +128,9 @@ function Footer() {
       </div>
 
       <div className="footer-terms-conditions">
-            <a href="#">Terms & Conditions</a> <br /> |
-            <a href="#">Privacy Policy</a> <br /> |
-            <a href="#">Sitemap</a> <br /> |
-            <a href="#">Disclaimer</a> <br /> |
+            <p>© 2023 Medicloud LLC. All rights reserved</p> 
+            <h4><a href="#">Privacy Policy</a> | <a href="#">Terms & conditions</a></h4>
+            
         </div>
     </footer>
   )
