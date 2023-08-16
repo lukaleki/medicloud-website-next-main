@@ -59,12 +59,20 @@ $secondary-color: #00AB55;
         height: 516px;
       }
       }
+      p {
+        width: 90% !important;
+      }
       
     }
 
     
 
     .clinic-registration {
+      margin-left: 40px;
+
+      .reg-left {
+        align-items: start;
+      }
       
       .clinic-img {
         width: 650px;
@@ -97,9 +105,14 @@ $secondary-color: #00AB55;
 
     .reporting {
 
-      .delivery-img {
-        width: 363px;
-        height: 218px;
+      .reporting-card {
+        margin-left: 0px !important;
+        width: 100% !important;
+      }
+
+      .reporting-img {
+        width: 363px !important;
+        height: 218px !important;
       }
     }
 
@@ -208,9 +221,16 @@ $secondary-color: #00AB55;
         font-size: 13px;
       }
 
+      a:nth-child(1) {
+        font-size: 13px;
+      }
+
     .footer-content {
+      gap: 15px;
+      margin-top: 25px;
 
       .footer-medicloud-info {
+        width: 20%;
         .title-wrapper {
           display: none;
         }
@@ -218,12 +238,29 @@ $secondary-color: #00AB55;
         p {
           font-size: 13px;
         }
+
+        .footer-social {
+          width: 200px;
+          gap: 10px;
+
+
+          .footer-icon {
+            width: 40px !important;
+            height: 40px !important;
+        }
+        }
+
+        
       }
       
       
 
-      .footer-contact-links {
-        font-size: 13px;
+      .footer-links {
+        font-size: 12px;
+        
+        a {
+          margin-top: 10px !important;
+        }
       }
 
       .footer-sub {
@@ -268,23 +305,87 @@ $secondary-color: #00AB55;
   }
 
   .navbar {
+    justify-content: space-between;
     box-shadow: none;
     .nav-label {
       h1 {display: none;}
     }
-    
+
     .nav-links {
-      display: none;
+      margin-top: 140px;
+      margin-right: 28px;
+      margin-left: 0;
+      display: grid;
+      gap: 20px;
+      text-align: end;
+    }
+    
+    .navbar-content-wrapper {
+      z-index: 5;
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0px;
+      width: 300px;
+      height: 475px;
+      background-color: #eceef0;
+      border-radius: 10px;
+      transition: 0.3s all ease-in;
+    }
+
+    .hidden {
+      right: -300px;
     }
 
     .drop-lang {
-      margin-left: 0px;
+      margin-left: 8px;
+      margin-top: 55px;
+      
       .georgian-flag {
       display: none;
     }
     }
-    
-    
+
+    .nav-burger {
+      position: relative;
+      z-index: 6;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      border-radius: 10px;
+      background-color: #F4F6F8;
+      cursor: pointer;
+      .burger-line:nth-child(1) {
+        border-radius: 10px;
+        width: 25px;
+        height: 4px;
+        background-color: $secondary-color;
+      }
+      .burger-line:nth-child(2) {
+        border-radius: 10px;
+        width: 25px;
+        height: 4px;
+        background-color: $secondary-color;
+      }
+      .burger-line-wrapper {
+        height: 4px;
+        width: 25px;
+        .burger-line {
+        border-radius: 10px;
+        width: 20px;
+        height: 4px;
+        background-color: $secondary-color;
+      }
+      } 
+    } 
+    .sticky {
+      position: fixed;
+      right: 28px;
+    } 
   }
 
   .clinic-registration {
@@ -350,6 +451,10 @@ $secondary-color: #00AB55;
     display: grid;
     place-items: center;
 
+    h3 {
+      font-size: 16px;
+    }
+
     .mobile-wrapper {
       width: 300px !important;
       height: 300px !important;
@@ -363,18 +468,12 @@ $secondary-color: #00AB55;
     }
 
     .mobile-right {
+      width: auto;
       align-items: center;
       justify-content: center;
-      width: 100%;
       text-align: center;
 
-      p {
-        width: 90% !important;
-      }
-
-      h3 {
-        font-size: 16px;
-      }
+      
       img {
         width: 165px;
         height: 85px;
@@ -773,6 +872,7 @@ $secondary-color: #00AB55;
 
     .active {
       display: grid;
+      place-items: center;
     }
 
     .disabled {
@@ -813,10 +913,6 @@ $secondary-color: #00AB55;
         width: 100%;
       }
 
-      .footer-contact {
-        place-items: center;
-      }
-
       .dropdown-btn {
        cursor: pointer;
        border: none;
@@ -830,6 +926,16 @@ $secondary-color: #00AB55;
        gap: 10px;
       }
 
+    }
+
+    .footer-terms-conditions {
+      display: grid;
+      margin-top: 25px;
+
+      p {
+        color: rgb(99,115,129);
+      }
+      
     }
   }
 }

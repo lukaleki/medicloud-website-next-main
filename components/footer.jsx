@@ -129,7 +129,12 @@ function Footer() {
 
       <div className="footer-terms-conditions">
             <p>© 2023 Medicloud LLC. All rights reserved</p> 
-            <h4><a href="#">Privacy Policy</a> | <a href="#">Terms & conditions</a></h4>
+            <div className="centered-links">
+              <a href="#">Privacy Policy</a>
+              <span className="separator">|</span>
+              <a href="#">Terms & Conditions</a>
+            </div>
+
             
         </div>
     </footer>

@@ -45,7 +45,8 @@ const OfferCards = () => {
 
 
   return (
-  <div className="slider-container">
+  <div className="what-we-offer">
+    <h1>რას გთავაზობთ</h1>
         <div className={isSlider ? 'offer-cards slider-mode' : 'offer-cards'} ref={sliderRef}>
             <div className="offer-card">
                <div className="icon-frame"><Image src={appWeb} width='32' height='32' alt='app-web' className='offer-image' /></div>

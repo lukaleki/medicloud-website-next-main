@@ -16,7 +16,6 @@ function Foreign() {
         <h1>უცხოური ექსპერტიზა</h1>
 
         <div className="foreign-cards">
-
           <div className="foreign-card">
             <div className="icon-frame-wrapper"><div className="foreign-frame"><Image src={foreignPeople} width='40' height='40' alt='foreign-people' className='foreign-image' /></div></div>   
             <div className="foreign-card-text">
