@@ -57,12 +57,33 @@ body {
     padding: 0px;
     box-sizing: border-box;
 }
+.dark-theme {
+    background-color: rgb(54,67,82) !important;
+
+    a {
+        color: rgb(150,157,164) !important;
+    }
+    
+    
+}
 
 .navbar-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    
+    .dark-theme {
+        background-color: rgb(54,67,82) !important;
+    
+        a {
+            color: rgb(150,157,164) !important;
+        }
+        
+        
+    }
+
+    
 }
 
 .navbar {
@@ -82,12 +103,7 @@ body {
         font-family: 'Quicksand', sans-serif;
         margin: 5px;
     }
-    .Medicloud-icon {
-        background-image: url(../public/Medicloud-icon.png);
-        background-size: cover;
-        width: 60px;
-        height: 60px;
-    }}
+}
 
     .navbar-content-wrapper {
         display: flex;

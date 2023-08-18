@@ -11,10 +11,11 @@ import  HardwareAI  from "../components/hardware-AI";
 import  Questions  from "../components/questions";
 import  Blog  from "../components/blog";
 import  Footer  from "../components/footer";
+import { ThemeProvider } from "./themeContext";
 
 export default function Home() {
   return (
-    <>
+    <ThemeProvider>
       <Nav />
       <ClinicRegistration />
       <MedPartner />
@@ -28,6 +29,6 @@ export default function Home() {
       <Questions />
       <Blog />
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
