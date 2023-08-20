@@ -7,8 +7,11 @@ import appMobile from '../public/app-mobile.png'
 import appPerson from '../public/app-person.png'
 import appChip from '../public/app-chip.png'
 import sliderArrow from '../public/slider-arrow.png' 
+import { useTheme } from '@/pages/themeContext'
 
 const OfferCards = () => {
+  const { darkTheme, toggleTheme } = useTheme();
+  const darkThemeClass =  darkTheme ? 'dark-theme' : '';
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSlider, setIsSlider] = useState(false);
@@ -45,7 +48,7 @@ const OfferCards = () => {
 
 
   return (
-  <div className="what-we-offer">
+  <div className={`what-we-offer ${darkThemeClass}`}>
     <h1>რას გთავაზობთ</h1>
         <div className={isSlider ? 'offer-cards slider-mode' : 'offer-cards'} ref={sliderRef}>
             <div className="offer-card">

@@ -23,6 +23,10 @@ $secondary-color: #00AB55;
     border-bottom-right-radius: 30px;
     cursor: pointer;
 
+    .dark-theme {
+        background-color: rgb(54,67,82) !important;
+    }
+
     @media screen and (max-width: 376px) {
         left: 11px;
         font-size: 16px !important;
@@ -58,8 +62,8 @@ body {
     box-sizing: border-box;
 }
 .dark-theme {
-    background-color: rgb(54,67,82) !important;
-
+    
+    background-color: rgb(33,43,54) !important;
     a {
         color: rgb(150,157,164) !important;
     }
@@ -71,22 +75,20 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
     
     .dark-theme {
         background-color: rgb(54,67,82) !important;
-    
+        box-shadow: -7px 10px 58px -6px rgba(12, 12, 12, 0.75);
         a {
             color: rgb(150,157,164) !important;
         }
-        
-        
     }
 
     
 }
 
 .navbar {
+  margin-top: 25px;
   background-color: white;
   width: 85%;
   height: 75px;
@@ -199,7 +201,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     .reg-left {
     display: flex;
     flex-direction: column;
@@ -232,20 +233,28 @@ body {
     
 }
 
-    .clinic-img {
+    .clinic-reg-img {
         margin-top: 100px;
     }
 }
 
 .med-partners {
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+
+    .dark-theme {
+        h4 {
+          color: rgb(54,67,82); 
+        }
+    }
+    
     h1 {
         @include h1-config;
         text-align: center;
+        margin-top: 100px;
     }
 
     .slider {
@@ -256,7 +265,7 @@ body {
         align-items: center;
         justify-content: center;
         overflow-x: hidden;
-        background-color: $primary-color;
+        background-color: $primary-color !important;
         border-radius: 20px;
         margin-top: 50px;
       
@@ -290,12 +299,12 @@ body {
 }
 
 .what-we-offer {
-    margin-top: 75px;
     overflow-x: hidden;
     position: relative;
-    background-color: rgb(244,246,248);
+    background-color: rgb(244,246,248) !important;
     display: grid;
     place-items: center;
+    height: 824px;
   
     h1 {
         margin-top: 20px;
@@ -306,9 +315,7 @@ body {
   .offer-cards {
     display: grid;
     place-items: center;
-    grid-template-columns: auto auto auto;
-
-    
+    grid-template-columns: auto auto auto; 
   
     @media screen and (max-width: 376px) {
       display: flex;
@@ -320,14 +327,16 @@ body {
       }
   
     .offer-card {
+      display: grid;
+      width: 336px;
+      height: 300px;
       background-color: white;
-      padding: 10px;
+      padding: 20px;
       margin: 20px;
       color: $primary-text-color;
       border-radius: 10px;
   
       .icon-frame {
-        margin-left: 60px;
         background-color: $primary-color;
         width: 64px;
         height: 64px;
@@ -337,14 +346,12 @@ body {
       }
   
       h3 {
-        margin-left: 60px;
         margin-top: 10px;
       }
   
       p {
-        margin-left: 60px;
         margin-top: 10px;
-        width: 80%;
+        width: 90%;
       }
     }
   
