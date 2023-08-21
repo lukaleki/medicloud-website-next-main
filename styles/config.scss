@@ -1,9 +1,8 @@
-$primary-text-color: rgb(99,115,129);
-$primary-color: #FFAB00;
-$secondary-color: #00AB55;
+$primary-text-color: rgb(99, 115, 129);
+$primary-color: #ffab00;
+$secondary-color: #00ab55;
 
 @media (min-width: 376px) and (max-width: 1024px) {
-
   * {
     h1 {
       font-size: 25px !important;
@@ -29,117 +28,107 @@ $secondary-color: #00AB55;
     li {
       margin-left: 13px !important;
     }
-    
-    
 
     .drop-lang {
-      
       .georgian-flag {
         display: none;
       }
     }
   }
-    
 
-    .contact {
-      .clinic-map {
-        width: 500px;
-        height: 430px;
-      }
+  .contact {
+    .clinic-map {
+      width: 500px;
+      height: 430px;
     }
+  }
 
-    .phone-app {
-      gap: 200px ;
-      .mobile-wrapper {
-        width: 400px;
-        height: 411px;
+  .phone-app {
+    gap: 200px;
+    .mobile-wrapper {
+      width: 400px;
+      height: 411px;
 
-        img {
+      img {
         width: 233px;
         height: 516px;
       }
-      }
-      p {
-        width: 90% !important;
-      }
-      
+    }
+    p {
+      width: 90% !important;
+    }
+  }
+
+  .clinic-registration {
+    margin-left: 40px;
+
+    .reg-left {
+      align-items: start;
     }
 
-    
+    .clinic-img {
+      width: 650px;
+      height: 350px;
+    }
+  }
 
-    .clinic-registration {
-      margin-left: 40px;
-
-      .reg-left {
-        align-items: start;
-      }
-      
-      .clinic-img {
-        width: 650px;
-        height: 350px;
-      }
+  .med-delivery {
+    .delivery-android {
+      width: 250px;
+      height: 430px;
+      right: 225px !important;
+    }
+    .delivery-phone {
+      width: 180px;
+      height: 390px;
+      right: 150px !important;
+    }
+    .delivery-map {
+      width: 200px;
+      height: 300px;
+      right: 25px !important;
     }
 
-    .med-delivery {
+    .delivery-btn {
+      margin-top: 50px;
+    }
+  }
 
-      .delivery-android {
-        width: 250px;
-        height: 430px;
-        right: 225px !important;
-      }
-      .delivery-phone {
-        width: 180px;
-        height: 390px;
-        right: 150px !important;
-      }
-      .delivery-map {
-        width: 200px;
-        height: 300px;
-        right: 25px !important;
-      }
-
-      .delivery-btn {
-        margin-top: 50px;
-      }
+  .reporting {
+    .reporting-card {
+      margin-left: 0px !important;
+      width: 100% !important;
     }
 
-    .reporting {
-
-      .reporting-card {
-        margin-left: 0px !important;
-        width: 100% !important;
-      }
-
-      .reporting-img {
-        width: 363px !important;
-        height: 218px !important;
-      }
+    .reporting-img {
+      width: 363px !important;
+      height: 218px !important;
     }
+  }
 
-    .foreign {
-      .foreign-exp-img {
-        width: 275px;
-        height: 275px;
-      }
+  .foreign {
+    .foreign-exp-img {
+      width: 275px;
+      height: 275px;
     }
+  }
 
-    .hardware {
-      gap: 200px !important;
-      .hardware-img {
-        width: 400px;
-        height: 300px;
-      }
+  .hardware {
+    gap: 200px !important;
+    .hardware-img {
+      width: 400px;
+      height: 300px;
     }
+  }
 
-    .questions {
-      .cards{
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .questions {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 
-      .contact {
-        gap: 50px !important;
-    
+  .contact {
+    gap: 50px !important;
 
     .contact-right {
       gap: 50px !important;
@@ -155,7 +144,6 @@ $secondary-color: #00AB55;
         input {
           width: 400px !important;
         }
-        
       }
 
       textarea {
@@ -169,33 +157,29 @@ $secondary-color: #00AB55;
   }
 
   .blog {
-
     .blog-left {
       margin-top: 75px;
       .blog-img {
         width: 436px;
         height: 235px;
       }
-  
+
       .blog-info {
         width: 389px !important;
         height: 130px !important;
-  
+
         h1 {
           font-size: 20px !important;
         }
-  
+
         .blog-info-description {
           margin-top: 10px !important;
-          
+
           h4 {
             font-size: 14px;
           }
         }
       }
-      
-  
-      
     }
 
     .blog-info-card {
@@ -209,21 +193,19 @@ $secondary-color: #00AB55;
         font-size: 12px;
       }
     }
-    
   }
 
   footer {
-    
-      h3 {
-          font-size: 14px;
-      }
-      a {
-        font-size: 13px;
-      }
+    h3 {
+      font-size: 14px;
+    }
+    a {
+      font-size: 13px;
+    }
 
-      a:nth-child(1) {
-        font-size: 13px;
-      }
+    a:nth-child(1) {
+      font-size: 13px;
+    }
 
     .footer-content {
       gap: 15px;
@@ -243,21 +225,16 @@ $secondary-color: #00AB55;
           width: 200px;
           gap: 10px;
 
-
           .footer-icon {
             width: 40px !important;
             height: 40px !important;
+          }
         }
-        }
-
-        
       }
-      
-      
 
       .footer-links {
         font-size: 12px;
-        
+
         a {
           margin-top: 10px !important;
         }
@@ -283,15 +260,13 @@ $secondary-color: #00AB55;
             font-size: 11px !important;
             margin-right: 30px;
           }
-        }   
+        }
       }
-    }  
-  }   
+    }
+  }
 }
 
-
 @media (max-width: 376px) {
-
   button {
     img {
       transition: 0.3s all;
@@ -308,7 +283,9 @@ $secondary-color: #00AB55;
     justify-content: space-between;
     box-shadow: none;
     .nav-label {
-      h1 {display: none;}
+      h1 {
+        display: none;
+      }
     }
 
     .nav-links {
@@ -319,7 +296,7 @@ $secondary-color: #00AB55;
       gap: 20px;
       text-align: end;
     }
-    
+
     .navbar-content-wrapper {
       z-index: 5;
       display: block;
@@ -340,10 +317,10 @@ $secondary-color: #00AB55;
     .drop-lang {
       margin-left: 8px;
       margin-top: 55px;
-      
+
       .georgian-flag {
-      display: none;
-    }
+        display: none;
+      }
     }
 
     .nav-burger {
@@ -357,7 +334,7 @@ $secondary-color: #00AB55;
       justify-content: center;
       gap: 5px;
       border-radius: 10px;
-      background-color: #F4F6F8;
+      background-color: #f4f6f8;
       cursor: pointer;
       .burger-line:nth-child(1) {
         border-radius: 10px;
@@ -375,17 +352,17 @@ $secondary-color: #00AB55;
         height: 4px;
         width: 25px;
         .burger-line {
-        border-radius: 10px;
-        width: 20px;
-        height: 4px;
-        background-color: $secondary-color;
+          border-radius: 10px;
+          width: 20px;
+          height: 4px;
+          background-color: $secondary-color;
+        }
       }
-      } 
-    } 
+    }
     .sticky {
       position: fixed;
       right: 28px;
-    } 
+    }
   }
 
   .clinic-registration {
@@ -473,7 +450,6 @@ $secondary-color: #00AB55;
       justify-content: center;
       text-align: center;
 
-      
       img {
         width: 165px;
         height: 85px;
@@ -508,7 +484,6 @@ $secondary-color: #00AB55;
 
         .delivery-line {
           margin-left: 10px;
-
         }
       }
 
@@ -525,8 +500,6 @@ $secondary-color: #00AB55;
         width: 90%;
         font-size: 14px;
       }
-
-      
     }
 
     .delivery-right {
@@ -556,14 +529,12 @@ $secondary-color: #00AB55;
         width: 164px !important;
         height: 230px !important;
       }
-
-
     }
-    
-      .delivery-btn {
-        position: static;
-        padding: 10px 96px 10px 96px !important;
-      }
+
+    .delivery-btn {
+      position: static;
+      padding: 10px 96px 10px 96px !important;
+    }
   }
 
   @mixin icon-frame-config {
@@ -577,23 +548,18 @@ $secondary-color: #00AB55;
     display: grid;
     margin-top: 25px;
 
-    
-      .reporting-img {
-        position: absolute;
-        width: 339px;
-        height: 192px;
-        margin-top: 175px;
-        margin-left: 5px !important;
-
-      }
-    
-
+    .reporting-img {
+      position: absolute;
+      width: 339px;
+      height: 192px;
+      margin-top: 175px;
+      margin-left: 5px !important;
+    }
 
     .reporting-right {
       h1 {
         font-size: 22px !important;
       }
-
 
       .reporting-card-wrapper {
         margin-top: 250px;
@@ -622,7 +588,7 @@ $secondary-color: #00AB55;
             width: 74px;
             height: 74px;
 
-            @include icon-frame-config()          
+            @include icon-frame-config();
           }
         }
       }
@@ -631,7 +597,6 @@ $secondary-color: #00AB55;
     .reporting-btn {
       margin-top: 875px !important;
       padding: 10px 75px 10px 75px !important;
-      
     }
   }
 
@@ -657,32 +622,31 @@ $secondary-color: #00AB55;
       .foreign-cards {
         margin-top: 300px;
         .foreign-card {
-        margin-left: 7px;
-        align-items: center;
+          margin-left: 7px;
+          align-items: center;
 
-        .foreign-frame {
-          width: 74px;
-          height: 74px;
-          margin-right: 10px;
+          .foreign-frame {
+            width: 74px;
+            height: 74px;
+            margin-right: 10px;
 
-          @include icon-frame-config()
-        }
+            @include icon-frame-config();
+          }
 
-        p {
-          font-size: 13px;
-          
+          p {
+            font-size: 13px;
+          }
         }
       }
-      }
-    
+
       .foreign-btn {
         position: static;
         margin-top: 35px;
         padding: 10px 90px 10px 90px !important;
         border-radius: 10px;
-        border: 1px solid #00AB55;
+        border: 1px solid #00ab55;
         font-size: 16px;
-      }  
+      }
     }
   }
 
@@ -694,7 +658,7 @@ $secondary-color: #00AB55;
     .hardware-left {
       display: grid;
       place-items: center;
-      
+
       .hardware-cards {
         margin-top: 200px;
 
@@ -705,7 +669,6 @@ $secondary-color: #00AB55;
             font-size: 12px;
           }
         }
-        
 
         .hardware-frame {
           margin-right: 0px;
@@ -715,7 +678,7 @@ $secondary-color: #00AB55;
 
       .hardware-btn {
         position: static;
-        padding: 10px 90px 10px 90px
+        padding: 10px 90px 10px 90px;
       }
     }
 
@@ -738,90 +701,83 @@ $secondary-color: #00AB55;
     }
 
     .cards {
-    grid-template-columns: repeat(1, 1fr) !important;
-    
-    .card {
-      width: 343px !important;
-      font-size: 13px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+
+      .card {
+        width: 343px !important;
+        font-size: 13px !important;
+      }
     }
-  }
 
-  .contact {
-    gap: 50px !important;
-    display: block;
+    .contact {
+      gap: 50px !important;
+      display: block;
 
-    .contact-left {
-      flex-direction: column-reverse;
-      img {
-        width: 341px;
-        height: 238.7px;
-        margin-left: 7px;
+      .contact-left {
+        flex-direction: column-reverse;
+        img {
+          width: 341px;
+          height: 238.7px;
+          margin-left: 7px;
+        }
+
+        .contact-line {
+          margin-left: 150px;
+          margin-bottom: 20px;
+          width: 60px;
+          height: 2px;
+
+          h3 {
+            position: relative;
+            top: -15px;
+            left: -110px;
+            rotate: 0deg;
+            margin-top: 0px;
+          }
+        }
       }
 
-      .contact-line {
-        margin-left: 150px;
-        margin-bottom: 20px;
-        width: 60px;
-        height: 2px;
-        
+      .contact-right {
+        margin-top: 25px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h3 {
-          position: relative;
-          top: -15px;
-          left: -110px;
-          rotate: 0deg;
-          margin-top: 0px;
+          font-size: 14px;
+          text-align: center;
         }
-        
 
-      }
-    }
+        form {
+          flex-direction: column;
+          width: 314px;
 
-    .contact-right {
-      margin-top: 25px;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    
-      h3 {
-        font-size: 14px;
-        text-align: center;
-      }
-    
-      form {
-        flex-direction: column;
-        width: 314px;
-    
-        input {
+          input {
+            width: 314px !important;
+          }
+        }
+
+        textarea {
           width: 314px !important;
         }
-        
-      }
-    
-      textarea {
-        width: 314px !important;
-      }
-      button {
-        
-        width: auto;
-        padding: 10px 105px 10px 105px;
-        border-radius: 10px;
+        button {
+          width: auto;
+          padding: 10px 105px 10px 105px;
+          border-radius: 10px;
 
-        h2 {
-          font-size: 16px;
+          h2 {
+            font-size: 16px;
+          }
         }
       }
-    }
     }
   }
 
-  
-
-  .blog  {
+  .blog {
     margin-top: 50px;
-    
+
     .blog-content {
       display: block;
 
@@ -836,14 +792,12 @@ $secondary-color: #00AB55;
           width: 305px !important;
           height: 102px !important;
           font-size: 10px;
-  
+
           .blog-info-description {
             margin-top: 25px !important;
           }
         }
       }
-
-      
 
       .blog-info-card {
         width: 343px !important;
@@ -887,7 +841,6 @@ $secondary-color: #00AB55;
       display: flex;
       flex-direction: column-reverse;
       gap: 0px;
-      
 
       h3 {
         display: none;
@@ -914,18 +867,17 @@ $secondary-color: #00AB55;
       }
 
       .dropdown-btn {
-       cursor: pointer;
-       border: none;
-       border-bottom: 1px solid $primary-color;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       font-size: 18px;
-       height: 48px;
-       width: 100%;
-       gap: 10px;
+        cursor: pointer;
+        border: none;
+        border-bottom: 1px solid $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        height: 48px;
+        width: 100%;
+        gap: 10px;
       }
-
     }
 
     .footer-terms-conditions {
@@ -933,9 +885,8 @@ $secondary-color: #00AB55;
       margin-top: 25px;
 
       p {
-        color: rgb(99,115,129);
+        color: rgb(99, 115, 129);
       }
-      
     }
   }
 }
