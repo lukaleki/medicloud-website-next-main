@@ -12,7 +12,7 @@ function ClinicRegistration() {
   const darkThemeClass =  darkTheme ? 'dark-theme' : ''
 
   return (
-    <section id='aboutUs' className={`clinic-registration ${darkThemeClass}`}>
+    <section id='aboutUs' className='clinic-registration'>
       <div className="reg-left">
         <h1>ყველაზე სრულყოფილი <br /> ჯანდაცვის პლატფორმა</h1>
         <p>დაარეგისტრირეთ თქვენი კლინიკა აპლიკაცია მედიქლაუდში და გახადეთ თქვენი სამედიცინო სერვისები პაციენტებისთვის უფრო კომფორტული და ხელმისაწვდომი.</p>

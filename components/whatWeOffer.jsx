@@ -13,6 +13,7 @@ const OfferCards = () => {
   const { darkTheme, toggleTheme } = useTheme();
   const darkThemeClass = darkTheme ? "dark-theme" : "";
   const darkThemeOffer = darkTheme ? "dark-theme-offer" : "";
+  const darkThemeIcon = darkTheme ? "dark-theme-icon" : "";
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSlider, setIsSlider] = useState(false);
@@ -66,7 +67,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>
@@ -84,7 +85,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>
@@ -102,7 +103,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>
@@ -121,7 +122,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>
@@ -139,7 +140,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>
@@ -157,7 +158,7 @@ const OfferCards = () => {
                 width="32"
                 height="32"
                 alt="app-web"
-                className="offer-image"
+                className={`offer-Image ${darkThemeIcon}`}
               />
             </div>
             <h3>

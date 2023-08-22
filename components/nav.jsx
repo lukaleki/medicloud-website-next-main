@@ -24,7 +24,7 @@ function Nav() {
   const darkThemeClass =  darkTheme ? 'dark-theme' : ''
 
   return (
-    <nav className={`navbar-wrapper  ${darkTheme ? 'dark-theme' : ''}`}>
+    <nav className='navbar-wrapper'>
       <div className={`navbar  ${darkTheme ? 'dark-theme' : ''}`}>
       <div className='nav-label'><Image className='medicloud-icon' src={darkTheme ? medicloudIconDark : medicloudIcon} width='60' height='60' alt='Medicloud-icon' ></Image><h1>medicloud</h1></div>
       <div className={navBurger ? "navbar-content-wrapper active" : "navbar-content-wrapper hidden"}>

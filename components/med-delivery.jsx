@@ -12,7 +12,7 @@ function MedDelivery() {
   const darkThemeCircle = darkTheme ? "dark-theme-circle" : "";
 
   return (
-    <section className={`med-delivery ${darkThemeClass}`}>
+    <section className='med-delivery'>
       <div className="delivery-left-wrapper">
         <h1 className="delivery-title">
           წამლის მიწოდების <br /> გადაწყვეტილება

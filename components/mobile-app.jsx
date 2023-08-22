@@ -3,13 +3,10 @@ import Image from "next/image";
 import phoneImg from "../public/phone.png";
 import googlePlayImg from "../public/google-play-badge.png";
 import appStoreImg from "../public/app-store-badge.png";
-import { useTheme } from "@/pages/themeContext";
 
 function MobileApp() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
   return (
-    <section className={`phone-app ${darkThemeClass}`}>
+    <section className='phone-app'>
       <div className="mobile-wrapper">
         <Image src={phoneImg} width="320" height="708" alt="reg-img" />
       </div>

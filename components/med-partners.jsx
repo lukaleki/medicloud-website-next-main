@@ -20,7 +20,7 @@ function MedPartners() {
   }, [activeSlide, slides.length]);
 
   return (
-    <section className={`med-partners ${darkThemeClass}`}>
+    <section className={`med-partners`}>
 
      <h1>მედიქლაუდში ჩართული <br /> პარტნიორი კლინიკები</h1>
 
