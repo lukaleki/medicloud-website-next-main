@@ -4,11 +4,8 @@ import arrowRight from "../public/arrow-right.png";
 import blogImg from "../public/blog-img.png";
 import calendar from "../public/ic-calendar.png";
 import cardImg from "../public/card-img.png";
-import { useTheme } from "@/pages/themeContext";
 
 function Blog() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeLighter = darkTheme ? "dark-theme-lighter" : "";
   return (
     <section className="blog">
       <div className="blog-title">
@@ -16,7 +13,7 @@ function Blog() {
         <Image src={arrowRight} width="32" height="32" alt="arrow-right" />
       </div>
       <div className="blog-content">
-        <div className={`blog-left ${darkThemeLighter}`}>
+        <div className='blog-left'>
           <Image
             className="blog-img"
             src={blogImg}
@@ -41,7 +38,7 @@ function Blog() {
             </div>
           </div>
         </div>
-        <div className={`blog-right ${darkThemeLighter}`}>
+        <div className='blog-right'>
           <div className="blog-info-card">
             <Image src={cardImg} width="64" height="75" alt="card-img" />
             <div className="card-wrapper">

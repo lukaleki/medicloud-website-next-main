@@ -12,16 +12,12 @@ import location from "../public/location-orange.png";
 import sendIcon from "../public/send-orange.png";
 import sendWhite from "../public/send.png";
 import sliderArrow from "../public/slider-arrow.png";
-import { useTheme } from "@/pages/themeContext";
 
 function Footer() {
   const [isSlider, setIsSlider] = React.useState(false);
   const [dropdownSub, setDropdownSub] = React.useState(false);
   const [dropdownLinks, setDropdownLinks] = React.useState(false);
   const [dropdownContact, setDropdownContact] = React.useState(false);
-
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeLighter = darkTheme ? "dark-theme-lighter" : "";
 
   React.useEffect(() => {
     const handleResize = () => {

@@ -1,0 +1,165 @@
+$primary-color-dark: rgb(22, 28, 36);
+$dark-lighter: rgb(38, 48, 59);
+$primary-text-color: rgb(234, 234, 234);
+$secondary-text-color: rgb(206, 206, 206);
+$primary-color: #ffab00;
+$secondary-color: #00ab55;
+
+.dark-theme {
+  background-color: $primary-color-dark !important;
+  //   a {
+  //     color: rgb(150, 157, 164) !important;
+  //   }
+  h2 {
+    color: $primary-text-color;
+  }
+  h3 {
+    color: $primary-text-color;
+  }
+  p {
+    color: $secondary-text-color !important;
+  }
+  .reporting-image {
+    filter: invert(100%);
+  }
+  .foreign-image {
+    filter: invert(100%);
+  }
+  .hardware-image {
+    filter: invert(100%);
+  }
+
+  button {
+    background-color: $primary-color-dark;
+  }
+
+  .navbar {
+    background-color: rgb(54, 67, 82) !important;
+    box-shadow: -7px 10px 58px -6px rgba(12, 12, 12, 0.75);
+    a {
+      color: $primary-text-color !important;
+    }
+  }
+
+  .med-partners {
+    h4 {
+      color: $primary-color-dark;
+    }
+  }
+
+  .what-we-offer {
+    background-color: $dark-lighter !important;
+    .offer-card {
+      background-color: rgb(54, 67, 82) !important;
+      box-shadow: 0px 13px 29px 0px rgba(65, 66, 67, 0.75);
+
+      h3 {
+        color: $primary-text-color;
+      }
+      p {
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  .phone-app {
+    h3 {
+      color: $primary-text-color;
+    }
+  }
+
+  .med-delivery {
+    .delivery-left {
+      .delivery-circle {
+        color: $primary-color-dark !important;
+      }
+    }
+  }
+
+  .reporting {
+    .reporting-card {
+      background-color: $primary-color-dark !important;
+    }
+  }
+
+  .foreign {
+    h3 {
+      color: $primary-text-color !important;
+    }
+  }
+
+  .hardware {
+    h3 {
+      color: $primary-text-color !important;
+    }
+  }
+
+  .questions {
+    * {
+      box-shadow: none !important;
+    }
+    background-color: $dark-lighter !important;
+
+    .card {
+      background-color: $primary-color-dark;
+    }
+
+    input {
+      background-color: $primary-color-dark;
+    }
+
+    textarea {
+      background-color: $primary-color-dark;
+    }
+
+    h2 {
+      color: rgb(209, 209, 209);
+    }
+
+    h3 {
+      color: $secondary-text-color;
+    }
+  }
+
+  .blog {
+    * {
+      box-shadow: none !important;
+    }
+    .blog-info {
+      background-color: $dark-lighter !important;
+
+      h1 {
+        color: $secondary-text-color;
+      }
+    }
+    .blog-info-card {
+      background-color: $dark-lighter !important;
+      h4 {
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  footer {
+    background-color: $dark-lighter;
+    padding-top: 20px;
+
+    .footer-main-link {
+        color: $primary-color;
+    }
+
+    .footer-content {
+      a {
+        color: $secondary-text-color;
+      }
+
+      .footer-icon {
+        background-color: $primary-color-dark !important;
+      }
+    }
+
+    .footer-contact-links {
+      color: $secondary-text-color;
+    }
+  }
+}

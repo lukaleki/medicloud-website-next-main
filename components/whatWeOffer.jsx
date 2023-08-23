@@ -7,13 +7,8 @@ import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
 import appChip from "../public/app-chip.png";
 import sliderArrow from "../public/slider-arrow.png";
-import { useTheme } from "@/pages/themeContext";
 
 const OfferCards = () => {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
-  const darkThemeOffer = darkTheme ? "dark-theme-offer" : "";
-  const darkThemeIcon = darkTheme ? "dark-theme-icon" : "";
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSlider, setIsSlider] = useState(false);
@@ -54,20 +49,20 @@ const OfferCards = () => {
 
   return (
     <section className="what-we-offer-wrapper">
-      <div className={`what-we-offer ${darkThemeClass}`}>
+      <div className='what-we-offer'>
         <h1>რას გთავაზობთ</h1>
         <div
           className={isSlider ? "offer-cards slider-mode" : "offer-cards"}
           ref={sliderRef}
         >
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appWeb}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>
@@ -78,14 +73,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appDelivery}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>
@@ -96,14 +91,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appMonitoring}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>
@@ -115,14 +110,14 @@ const OfferCards = () => {
             </p>
           </div>
 
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appMobile}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>
@@ -133,14 +128,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appPerson}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>
@@ -151,14 +146,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className={`offer-card ${darkThemeOffer}`}>
+          <div className='offer-card'>
             <div className="icon-frame">
               <Image
                 src={appChip}
                 width="32"
                 height="32"
                 alt="app-web"
-                className={`offer-Image ${darkThemeIcon}`}
+                className='offer-Image'
               />
             </div>
             <h3>

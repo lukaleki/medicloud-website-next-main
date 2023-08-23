@@ -2,14 +2,11 @@ import React from "react";
 import Image from "next/image";
 import diagonalArrow from "../public/diagonal-arrow.png";
 import clinicImg from "../public/web-clinic-notebook.png";
-import { useTheme } from "@/pages/themeContext";
 
 function ClinicWeb() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
 
   return (
-    <section className={`clinic-registration ${darkThemeClass}`}>
+    <section className='clinic-registration'>
       <div className="reg-left">
         <h1>კლინიკების ვებ აპლიკაცია</h1>
         <p>
@@ -19,7 +16,7 @@ function ClinicWeb() {
           დისტანციური მომსახურება შესთავაზოთ და გამოიყენოთ სამედიცინო
           საინფორმაციო სისტემა უფასოდ
         </p>
-        <button className={`web-btn ${darkThemeClass}`}>
+        <button className='web-btn'>
           საიტზე გადასვლა
           <Image
             src={diagonalArrow}

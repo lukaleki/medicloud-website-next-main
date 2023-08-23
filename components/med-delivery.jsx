@@ -4,13 +4,8 @@ import diagonalArrow from "../public/diagonal-arrow.png";
 import android from "../public/Android.png";
 import deliveryMap from "../public/delivery-map.png";
 import phone from "../public/Phone.png";
-import { useTheme } from "@/pages/themeContext";
 
 function MedDelivery() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
-  const darkThemeCircle = darkTheme ? "dark-theme-circle" : "";
-
   return (
     <section className='med-delivery'>
       <div className="delivery-left-wrapper">
@@ -19,7 +14,7 @@ function MedDelivery() {
         </h1>
         <div className="delivery-left">
           <div className="delivery-left-first-part">
-            <h1 className={`delivery-circle ${darkThemeCircle}`}>01</h1> <br />{" "}
+            <h1 className='delivery-circle'>01</h1> <br />{" "}
             <div className="delivery-line"></div> <br />{" "}
             <h1 className="delivery-circle-hollow">02</h1>
           </div>
@@ -38,7 +33,7 @@ function MedDelivery() {
             </p>
           </div>
         </div>
-        <button className={`delivery-btn ${darkThemeClass}`}>
+        <button className='delivery-btn'>
           დეტალურად{" "}
           <Image
             src={diagonalArrow}

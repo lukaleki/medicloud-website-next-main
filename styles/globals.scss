@@ -51,6 +51,10 @@ $primary-color-dark: rgb(22, 28, 36);
   padding: 0px;
   box-sizing: border-box;
   font-family: "Noto Sans Georgian", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -60,36 +64,12 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
-  .dark-theme {
-    background-color: $primary-color-dark !important;
-    a {
-      color: rgb(150, 157, 164) !important;
-    }
-    h2 {
-      color: $primary-text-color;
-    }
-    p {
-      color: $primary-text-color;
-    }
-    .dark-theme-icon {
-      filter: invert(100%);
-    }
-  }
 }
 
 .navbar-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-
-  .dark-theme {
-    background-color: rgb(54, 67, 82) !important;
-    box-shadow: -7px 10px 58px -6px rgba(12, 12, 12, 0.75);
-    a {
-      color: rgb(150, 157, 164) !important;
-    }
-  }
 }
 
 .navbar {
@@ -246,12 +226,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  .dark-theme {
-    h4 {
-      color: $primary-color-dark;
-    }
-  }
-
   h1 {
     @include h1-config;
     text-align: center;
@@ -293,23 +267,6 @@ body {
           margin-left: 0;
         }
       }
-    }
-  }
-}
-
-.what-we-offer-wrapper {
-  .dark-theme {
-    background-color: rgb(38, 48, 59) !important;
-  }
-  .dark-theme-offer {
-    background-color: rgb(54, 67, 82) !important;
-    box-shadow: 0px 13px 29px 0px rgba(65, 66, 67, 0.75);
-
-    h3 {
-      color: rgb(234, 234, 234);
-    }
-    p {
-      color: rgb(206, 206, 206);
     }
   }
 }
@@ -489,9 +446,6 @@ body {
       width: 50%;
     }
     .delivery-left-first-part {
-      .dark-theme-circle {
-        color: $primary-color-dark !important;
-      }
       .delivery-circle {
         background-color: $primary-color;
         color: white;
@@ -630,6 +584,10 @@ body {
       display: flex;
       margin-top: 50px;
 
+      .foreign-card-text {
+        width: 80%;
+      }
+
       .foreign-frame {
         background-color: $primary-color;
         width: 80px;
@@ -721,21 +679,6 @@ body {
 
 .questions-wrapper {
   margin-top: 150px;
-
-  .dark-theme-lighter {
-    * {
-      box-shadow: none !important;
-    }
-    background-color: rgb(38, 48, 59) !important;
-
-    h2 {
-      color: rgb(209, 209, 209);
-    }
-
-    h3 {
-      color: rgb(206, 206, 206);
-    }
-  }
 
   .questions {
     padding-top: 50px;
@@ -866,25 +809,6 @@ body {
   align-items: center;
   margin-top: 100px;
 
-  .dark-theme-lighter {
-    * {
-      box-shadow: none !important;
-    }
-    .blog-info {
-      background-color: rgb(38, 48, 59) !important;
-
-      h1 {
-        color: rgb(209, 209, 209);
-      }
-    }
-    .blog-info-card {
-      background-color: rgb(38, 48, 59) !important;
-      h4 {
-        color: rgb(209, 209, 209);
-      }
-    }
-  }
-
   .blog-title {
     display: flex;
     align-items: center;
@@ -977,20 +901,26 @@ footer {
   align-items: center;
   justify-content: center;
 
-  a {
-    color: $primary-color;
-    text-decoration: none;
+  .footer-main-link {
     display: flex;
+    text-decoration: none;
   }
 
   .footer-content {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    gap: 50px;
+    margin-top: 25px;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      display: flex;
+      margin-top: 20px;
+    }
 
     .footer-medicloud-info {
-      width: 25%;
+      width: 20%;
       .info-title {
         display: flex;
         color: $primary-color;
@@ -1011,9 +941,8 @@ footer {
 
       .footer-social {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
         margin-top: 30px;
         .footer-icon {
           cursor: pointer;

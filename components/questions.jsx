@@ -3,20 +3,16 @@ import Image from "next/image";
 import vectorDown from "../public/vector-down.png";
 import clinicMap from "../public/clinic-map.png";
 import diagonalArrow from "../public/diagonal-arrow.png";
-import { useTheme } from "@/pages/themeContext";
 
 function Questions() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeLighter = darkTheme ? "dark-theme-lighter" : "";
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
   return (
     <section id="questions" className='questions-wrapper'>
-      <div className={`questions ${darkThemeLighter}`}>
+      <div className='questions'>
         <h1>
           ხშირად დასმული <br /> კითხვები
         </h1>
         <div className="cards">
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -26,7 +22,7 @@ function Questions() {
             />
             <h2>ვინ ვართ ჩვენ?</h2>
           </div>
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -36,7 +32,7 @@ function Questions() {
             />
             <h2>რამდენად გამოსადეგია ჩვენი აპლიკაცია?</h2>
           </div>
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -46,7 +42,7 @@ function Questions() {
             />
             <h2>როგორ დავარეგისტრირო კლინიკა?</h2>
           </div>
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -56,7 +52,7 @@ function Questions() {
             />
             <h2>რას მიიღებთ მედიქლაუდში ჩართვით?</h2>
           </div>
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -66,7 +62,7 @@ function Questions() {
             />
             <h2>როგორ გადმოვწერო აპლიკაცია?</h2>
           </div>
-          <div className={`card ${darkThemeClass}`}>
+          <div className='card'>
             <Image
               className="vector"
               src={vectorDown}
@@ -99,24 +95,23 @@ function Questions() {
             </h3>
             <form>
               <input
-                className={`contact-username ${darkThemeClass}`}
+                className='contact-username'
                 placeholder="სახელი"
                 type="text"
               />
               <input
-                className={`contact-email ${darkThemeClass}`}
+                className='contact-email'
                 placeholder="ელ-ფოსტა"
                 type="email"
               />
             </form>
             <textarea
-              className={darkThemeClass}
               placeholder="ჩაწერეთ ტექსტი"
               name="w3review"
               rows="10"
               cols="68"
             ></textarea>
-            <button className={darkThemeClass}>
+            <button>
               გაგზავნა
               <Image
                 src={diagonalArrow}

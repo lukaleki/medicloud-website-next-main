@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useTheme } from '@/pages/themeContext'
 
 function MedPartners() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass =  darkTheme ? 'dark-theme' : ''
   const [activeSlide, setActiveSlide] = useState(0);
   const slides = [
     { text: 'sponsor 1 sponsor 2 sponsor 3 sponsor 4 sponsor 5 sponsor 6' },
@@ -20,11 +17,11 @@ function MedPartners() {
   }, [activeSlide, slides.length]);
 
   return (
-    <section className={`med-partners`}>
+    <section className='med-partners'>
 
      <h1>მედიქლაუდში ჩართული <br /> პარტნიორი კლინიკები</h1>
 
-      <div className={`slider ${darkThemeClass}`}>
+      <div className='slider'>
       <div className="slider-content">
           <div className={`slide ${activeSlide === 0 ? 'active' : ''}`}>
             <h4>{slides[0].text}</h4>  

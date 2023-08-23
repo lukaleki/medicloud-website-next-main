@@ -6,12 +6,8 @@ import appWeb from "../public/app-web.png";
 import appDelivery from "../public/app-delivery.png";
 import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
-import { useTheme } from "@/pages/themeContext";
 
 function Reporting() {
-  const { darkTheme, toggleTheme } = useTheme();
-  const darkThemeClass = darkTheme ? "dark-theme" : "";
-  const darkThemeIcon = darkTheme ? "dark-theme-icon" : "";
   return (
     <section className='reporting'>
       <div className="reporting-left">
@@ -23,7 +19,7 @@ function Reporting() {
           alt="laptop"
         />{" "}
         <br />
-        <button className={`reporting-btn ${darkThemeClass}`}>
+        <button className='reporting-btn'>
           საიტზე გადასვლა{" "}
           <Image
             src={diagonalArrow}
@@ -39,7 +35,7 @@ function Reporting() {
           რეპორტინგის და <br /> მონიტორინგის აპლიკაცია
         </h1>
         <div className="reporting-card-wrapper">
-          <div className={`reporting-card ${darkThemeClass}`}>
+          <div className='reporting-card'>
             <div className="icon-frame-wrapper">
               <div className="icon-frame">
                 <Image
@@ -47,7 +43,7 @@ function Reporting() {
                   width="37"
                   height="37"
                   alt="app-web"
-                  className={`reporting-image ${darkThemeIcon}`}
+                  className='reporting-image'
                 />
               </div>
             </div>
@@ -59,7 +55,7 @@ function Reporting() {
               </p>
             </div>
           </div>
-          <div className={`reporting-card ${darkThemeClass}`}>
+          <div className='reporting-card'>
             <div className="icon-frame-wrapper">
               <div className="icon-frame">
                 <Image
@@ -67,7 +63,7 @@ function Reporting() {
                   width="37"
                   height="37"
                   alt="app-web"
-                  className={`reporting-image ${darkThemeIcon}`}
+                  className='reporting-image'
                 />
               </div>
             </div>
@@ -76,7 +72,7 @@ function Reporting() {
               <p>დეპარტამენტების შექმნა, წაშლა, შეცვლა...</p>
             </div>
           </div>
-          <div className={`reporting-card ${darkThemeClass}`}>
+          <div className='reporting-card'>
             <div className="icon-frame-wrapper">
               <div className="icon-frame">
                 <Image
@@ -84,7 +80,7 @@ function Reporting() {
                   width="37"
                   height="37"
                   alt="app-web"
-                  className={`reporting-image ${darkThemeIcon}`}
+                  className='reporting-image'
                 />
               </div>
             </div>
@@ -96,7 +92,7 @@ function Reporting() {
               </p>
             </div>
           </div>
-          <div className={`reporting-card ${darkThemeClass}`}>
+          <div className='reporting-card'>
             <div className="icon-frame-wrapper">
               <div className="icon-frame">
                 <Image
@@ -104,7 +100,7 @@ function Reporting() {
                   width="37"
                   height="37"
                   alt="app-web"
-                  className={`reporting-image ${darkThemeIcon}`}
+                  className='reporting-image'
                 />
               </div>
             </div>
