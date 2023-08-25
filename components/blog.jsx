@@ -13,7 +13,7 @@ function Blog() {
         <Image src={arrowRight} width="32" height="32" alt="arrow-right" />
       </div>
       <div className="blog-content">
-        <div className='blog-left'>
+        <div className="blog-left">
           <Image
             className="blog-img"
             src={blogImg}
@@ -24,21 +24,28 @@ function Blog() {
           <div className="blog-info">
             <h1>რამდენიმე რჩევა, თუ როგორ აირიდო სეზონური გრიპი...</h1>
             <div className="blog-info-description">
-              <Image src={calendar} width="22" height="22" alt="arrow-right" />{" "}
-              <p>26 თებერვალი 2023</p>
+              <p>
+                <Image
+                  src={calendar}
+                  width="22"
+                  height="22"
+                  alt="arrow-right"
+                />{" "}
+                26 თებერვალი 2023
+              </p>
               <h4>
                 <strong>სრულად ნახვა</strong>
-              </h4>{" "}
-              <Image
-                src={arrowRight}
-                width="32"
-                height="32"
-                alt="arrow-right"
-              />
+                <Image
+                  src={arrowRight}
+                  width="32"
+                  height="32"
+                  alt="arrow-right"
+                />
+              </h4>
             </div>
           </div>
         </div>
-        <div className='blog-right'>
+        <div className="blog-right">
           <div className="blog-info-card">
             <Image src={cardImg} width="64" height="75" alt="card-img" />
             <div className="card-wrapper">

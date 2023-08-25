@@ -44,7 +44,7 @@ $secondary-color: #00ab55;
   }
 
   .phone-app {
-    gap: 200px;
+    gap: 150px;
     .mobile-wrapper {
       width: 400px;
       height: 411px;
@@ -55,7 +55,7 @@ $secondary-color: #00ab55;
       }
     }
     p {
-      width: 90% !important;
+      width: 100% !important;
     }
   }
 
@@ -69,6 +69,9 @@ $secondary-color: #00ab55;
     .clinic-img {
       width: 650px;
       height: 350px;
+    }
+    .web-btn {
+      margin-top: 500px !important;
     }
   }
 
@@ -95,6 +98,7 @@ $secondary-color: #00ab55;
   }
 
   .reporting {
+    padding-top: 0px;
     .reporting-card {
       margin-left: 0px !important;
       width: 100% !important;
@@ -107,6 +111,10 @@ $secondary-color: #00ab55;
   }
 
   .foreign {
+    gap: 125px;
+    p {
+      width: 90%;
+    }
     .foreign-exp-img {
       width: 275px;
       height: 275px;
@@ -114,7 +122,8 @@ $secondary-color: #00ab55;
   }
 
   .hardware {
-    gap: 200px !important;
+    gap: 150px !important;
+    padding: 25px;
     .hardware-img {
       width: 400px;
       height: 300px;
@@ -176,7 +185,7 @@ $secondary-color: #00ab55;
           margin-top: 10px !important;
 
           h4 {
-            font-size: 14px;
+            font-size: 18px;
           }
         }
       }
@@ -241,6 +250,8 @@ $secondary-color: #00ab55;
       }
 
       .footer-sub {
+        width: 100%;
+
         p {
           font-size: 13px;
         }
@@ -282,6 +293,7 @@ $secondary-color: #00ab55;
   .navbar {
     justify-content: space-between;
     box-shadow: none;
+    background-color: transparent !important;
     .nav-label {
       h1 {
         display: none;
@@ -369,8 +381,7 @@ $secondary-color: #00ab55;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
-
-    margin: 0px;
+    margin-top: 50px;
     .reg-left {
       display: block;
     }
@@ -397,12 +408,14 @@ $secondary-color: #00ab55;
       margin-top: 285px !important;
     }
     .web-btn {
+      left: 23px !important;
       padding: 10px 75px 10px 75px !important;
       margin-top: 250px !important;
     }
   }
 
   .med-partners {
+    margin-top: 50px;
     h1 {
       font-size: 24px !important;
     }
@@ -423,7 +436,6 @@ $secondary-color: #00ab55;
   }
 
   .phone-app {
-    margin-top: 250px;
     gap: 0px;
     display: grid;
     place-items: center;
@@ -440,7 +452,6 @@ $secondary-color: #00ab55;
       img {
         width: 170px;
         height: 377px;
-        margin-bottom: 120px;
       }
     }
 
@@ -451,15 +462,15 @@ $secondary-color: #00ab55;
       text-align: center;
 
       img {
-        width: 165px;
-        height: 85px;
+        width: 158px;
+        height: 50px;
       }
     }
   }
 
   .med-delivery {
     flex-direction: column-reverse;
-    margin-top: 25px;
+    margin-top: 75px;
 
     h1 {
       font-size: 25px !important;
@@ -533,6 +544,7 @@ $secondary-color: #00ab55;
 
     .delivery-btn {
       position: static;
+      margin-top: 50px;
       padding: 10px 96px 10px 96px !important;
     }
   }
@@ -545,18 +557,19 @@ $secondary-color: #00ab55;
   }
 
   .reporting {
+    padding-top: 0px;
     display: grid;
-    margin-top: 25px;
 
     .reporting-img {
       position: absolute;
       width: 339px;
       height: 192px;
-      margin-top: 175px;
-      margin-left: 5px !important;
+      margin-top: 120px;
+      margin-left: 18px !important;
     }
 
     .reporting-right {
+      margin-top: 0px;
       h1 {
         font-size: 22px !important;
       }
@@ -595,8 +608,8 @@ $secondary-color: #00ab55;
     }
 
     .reporting-btn {
-      margin-top: 875px !important;
-      padding: 10px 75px 10px 75px !important;
+      margin-top: 800px !important;
+      padding: 10px 85px 10px 85px !important;
     }
   }
 
@@ -651,6 +664,7 @@ $secondary-color: #00ab55;
   }
 
   .hardware {
+    margin-top: 50px;
     gap: 0px;
     flex-direction: column-reverse;
     justify-content: center;
@@ -679,6 +693,7 @@ $secondary-color: #00ab55;
       .hardware-btn {
         position: static;
         padding: 10px 90px 10px 90px;
+        margin-top: 50px;
       }
     }
 
@@ -694,7 +709,7 @@ $secondary-color: #00ab55;
   }
 
   .questions {
-    margin-top: 75px;
+    margin-top: 50px;
 
     h1 {
       margin-bottom: 0px;
@@ -718,7 +733,7 @@ $secondary-color: #00ab55;
         img {
           width: 341px;
           height: 238.7px;
-          margin-left: 7px;
+          margin-left: 17px;
         }
 
         .contact-line {
@@ -791,10 +806,18 @@ $secondary-color: #00ab55;
           top: -50px;
           width: 305px !important;
           height: 102px !important;
-          font-size: 10px;
+          font-size: 10px !important;
 
           .blog-info-description {
             margin-top: 25px !important;
+
+            h4 {
+              font-size: 12px !important;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
           }
         }
       }
@@ -803,7 +826,7 @@ $secondary-color: #00ab55;
         width: 343px !important;
         height: 82px !important;
         font-size: 12px;
-        padding: 15px;
+        padding: 15px !important;
 
         img {
           width: 46px;
@@ -860,10 +883,6 @@ $secondary-color: #00ab55;
         p {
           font-size: 14px;
         }
-      }
-
-      .footer-sub {
-        width: 100%;
       }
 
       .dropdown-btn {

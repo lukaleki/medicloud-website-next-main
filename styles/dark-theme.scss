@@ -28,16 +28,27 @@ $secondary-color: #00ab55;
   .hardware-image {
     filter: invert(100%);
   }
+  .offer-image {
+    filter: invert(100%);
+  }
 
   button {
     background-color: $primary-color-dark;
   }
 
   .navbar {
-    background-color: rgb(54, 67, 82) !important;
+    background-color: rgb(54, 67, 82);
     box-shadow: -7px 10px 58px -6px rgba(12, 12, 12, 0.75);
     a {
       color: $primary-text-color !important;
+    }
+
+    .dropdown-content-active {
+      background-color: $dark-lighter !important;
+    }
+
+    .nav-burger {
+      background-color: $dark-lighter;
     }
   }
 
@@ -59,6 +70,12 @@ $secondary-color: #00ab55;
       p {
         color: $secondary-text-color;
       }
+    }
+  }
+
+  .clinic-registration {
+    .web-btn {
+      background-color: $primary-color-dark;
     }
   }
 
@@ -144,8 +161,12 @@ $secondary-color: #00ab55;
     background-color: $dark-lighter;
     padding-top: 20px;
 
+    .dropdown-btn {
+      color: $secondary-text-color;
+    }
+
     .footer-main-link {
-        color: $primary-color;
+      color: $primary-color;
     }
 
     .footer-content {
@@ -161,5 +182,15 @@ $secondary-color: #00ab55;
     .footer-contact-links {
       color: $secondary-text-color;
     }
+    form {
+      box-shadow: none !important;
+      background-color: $primary-color-dark;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .navbar-content-wrapper {
+    background-color: $primary-color-dark !important;
   }
 }

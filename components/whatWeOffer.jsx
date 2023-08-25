@@ -61,8 +61,8 @@ const OfferCards = () => {
                 src={appWeb}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>
@@ -79,8 +79,8 @@ const OfferCards = () => {
                 src={appDelivery}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>
@@ -97,8 +97,8 @@ const OfferCards = () => {
                 src={appMonitoring}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>
@@ -116,8 +116,8 @@ const OfferCards = () => {
                 src={appMobile}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>
@@ -134,8 +134,8 @@ const OfferCards = () => {
                 src={appPerson}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>
@@ -152,8 +152,8 @@ const OfferCards = () => {
                 src={appChip}
                 width="32"
                 height="32"
-                alt="app-web"
-                className='offer-Image'
+                alt='offer-image'
+                className='offer-image'
               />
             </div>
             <h3>

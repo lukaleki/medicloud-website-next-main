@@ -29,13 +29,13 @@ function MobileApp() {
           <Image
             src={googlePlayImg}
             width="192"
-            height="90"
+            height="60"
             alt="app-store-img"
           />
           <Image
             src={appStoreImg}
             width="192"
-            height="90"
+            height="60"
             alt="app-store-img"
           />
         </div>
