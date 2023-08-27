@@ -8,7 +8,7 @@ function MobileApp() {
   return (
     <section className='phone-app'>
       <div className="mobile-wrapper">
-        <Image src={phoneImg} width="320" height="708" alt="reg-img" />
+        <Image className="mobile-img" src={phoneImg} width="320" height="708" alt="mobile-img" />
       </div>
       <div className="mobile-right">
         <h1>

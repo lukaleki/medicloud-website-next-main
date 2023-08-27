@@ -4,6 +4,7 @@ import ForeignExp from "../public/foreign-exp.png";
 import foreignPeople from "../public/foreign-people.svg";
 import foreignDoctor from "../public/foreign-doctor.png";
 import diagonalArrow from "../public/diagonal-arrow.png";
+import CosmeticImg from "../public/foreign-cosmetics.png";
 
 function Foreign() {
   return (
@@ -15,6 +16,13 @@ function Foreign() {
           width="471"
           height="482"
           alt="foreign-exp"
+        />
+        <Image
+          className="foreign-cosmetics"
+          src={CosmeticImg}
+          width="671"
+          height="600"
+          alt="foreign-cosmetics"
         />
       </div>
 

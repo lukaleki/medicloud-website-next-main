@@ -12,6 +12,7 @@ $primary-color-dark: rgb(22, 28, 36);
   justify-content: center;
   gap: 5px;
   color: $secondary-color;
+  background-color: white;
   position: absolute;
   left: 0px;
   margin-top: 75px;
@@ -427,7 +428,6 @@ body {
 
   .mobile-wrapper {
     margin-top: 200px;
-    padding-bottom: 175px;
     background-color: $primary-color;
     width: 564px;
     height: 564px;
@@ -437,6 +437,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .mobile-img {
+      margin-bottom: 200px;
+    }
+  }
+  .mobile-wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 100%;
+    width: 583px;
+    height: 583px;
+    background-color: rgba(255, 171, 0, 0.4);
   }
   .mobile-right {
     display: flex;
@@ -611,6 +624,11 @@ body {
   .foreign-left {
     margin-left: 150px;
     margin-top: 100px;
+
+    .foreign-cosmetics {
+      position: absolute;
+      left: 50px;
+    }
   }
 
   .foreign-right {
@@ -648,6 +666,7 @@ body {
 
     .foreign-btn {
       color: $secondary-color;
+      background-color: white;
       position: absolute;
       right: 0px;
       margin-top: 75px;
@@ -721,6 +740,13 @@ body {
       @include button-config;
     }
   }
+
+  .hardware-right {
+    .hardware-cosmetics {
+      position: absolute;
+      right: 50px;
+    }
+  }
 }
 
 .questions-wrapper {
@@ -751,8 +777,12 @@ body {
       display: flex;
       align-items: center;
 
-      .vector {
-        margin: 20px;
+      .vector-wrapper {
+        width: 48px;
+        height: 48px;
+        background-color: rgb(255,245,204);
+        display: grid;
+        place-items: center;
       }
     }
   }
@@ -840,6 +870,7 @@ body {
         margin-top: 20px;
         border-radius: 64px;
         color: $secondary-color;
+        background-color: white;
         border: 2px solid $secondary-color;
       }
     }
@@ -944,6 +975,7 @@ footer {
   .footer-main-link {
     display: flex;
     text-decoration: none;
+    color: $primary-color;
   }
 
   .footer-content {

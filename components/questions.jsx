@@ -6,70 +6,83 @@ import diagonalArrow from "../public/diagonal-arrow.png";
 
 function Questions() {
   return (
-    <section id="questions" className='questions-wrapper'>
-      <div className='questions'>
+    <section id="questions" className="questions-wrapper">
+      <div className="questions">
         <h1>
           ხშირად დასმული <br /> კითხვები
         </h1>
         <div className="cards">
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
             <h2>ვინ ვართ ჩვენ?</h2>
           </div>
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
             <h2>რამდენად გამოსადეგია ჩვენი აპლიკაცია?</h2>
           </div>
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
             <h2>როგორ დავარეგისტრირო კლინიკა?</h2>
           </div>
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
+
             <h2>რას მიიღებთ მედიქლაუდში ჩართვით?</h2>
           </div>
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
             <h2>როგორ გადმოვწერო აპლიკაცია?</h2>
           </div>
-          <div className='card'>
-            <Image
-              className="vector"
-              src={vectorDown}
-              width="19"
-              height="20"
-              alt="vector-down"
-            />
+          <div className="card">
+            <div className="vector-wrapper">
+              <Image
+                className="vector"
+                src={vectorDown}
+                width="20"
+                height="20"
+                alt="vector-down"
+              />
+            </div>
             <h2>რას გთავაზობთ?</h2>
           </div>
         </div>
@@ -95,12 +108,12 @@ function Questions() {
             </h3>
             <form>
               <input
-                className='contact-username'
+                className="contact-username"
                 placeholder="სახელი"
                 type="text"
               />
               <input
-                className='contact-email'
+                className="contact-email"
                 placeholder="ელ-ფოსტა"
                 type="email"
               />

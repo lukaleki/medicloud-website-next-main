@@ -6,7 +6,7 @@ import appWeb from "../public/app-web.png";
 import appDelivery from "../public/app-delivery.png";
 import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
-import CosmeticImg from "../public/cosmetic-reporting.png";
+import CosmeticImg from "../public/reporting-cosmetics.png";
 
 function Reporting() {
   return (
