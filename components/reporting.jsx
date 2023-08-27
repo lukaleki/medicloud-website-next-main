@@ -6,18 +6,26 @@ import appWeb from "../public/app-web.png";
 import appDelivery from "../public/app-delivery.png";
 import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
+import CosmeticImg from "../public/cosmetic-reporting.png";
 
 function Reporting() {
   return (
     <section className='reporting'>
       <div className="reporting-left">
+      <Image
+          className="reporting-cosmetic"
+          src={CosmeticImg}
+          width="581"
+          height="700"
+          alt="cosmetic-img-reporting"
+        />
         <Image
           className="reporting-img"
           src={laptop}
           width="616"
           height="348"
           alt="laptop"
-        />{" "}
+        />     
         <br />
         <button className='reporting-btn'>
           საიტზე გადასვლა{" "}

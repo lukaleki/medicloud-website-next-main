@@ -66,6 +66,16 @@ body {
   box-sizing: border-box;
 }
 
+.cosmetic-rectangle {
+  background-color: rgb(244,246,248);
+  width: 713px;
+  height: 713px;
+  right: 0px;
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  z-index: -1;
+}
+
 .navbar-wrapper {
   width: 100%;
   display: flex;
@@ -183,6 +193,7 @@ body {
 }
 
 .clinic-registration {
+  padding-top: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +203,7 @@ body {
     justify-content: center;
     gap: 20px;
     width: 50%;
+    padding-left: 50px;
 
     h1 {
       @include h1-config;
@@ -223,7 +235,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 
   h1 {
@@ -238,10 +250,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: $primary-color !important;
     border-radius: 20px;
     margin-top: 50px;
+
+    .cosmetic-circle {
+      height: 150px;
+      background-color: rgb(255,181,30);
+      position: absolute;
+    }
+
+    .cosmetic-circle:nth-child(1) {
+      width: 180px;
+      border-radius: 0% 100% 100% 0% / 100% 0% 100% 0% ;
+      left: 50px;
+    }
+
+    .cosmetic-circle:nth-child(2) {
+      border-radius: 150px 150px 0px 0px;
+      width: 250px;
+      right: 150px;
+    }
 
     .slider-content {
       display: flex;
@@ -520,6 +550,13 @@ body {
     .reporting-img {
       margin-left: 30px;
     }
+
+    .reporting-cosmetic {
+      position: absolute;
+      z-index: -1;
+      left: 50px;
+      margin-top: -150px;
+    }
     .reporting-btn {
       @include button-config;
     }
@@ -687,7 +724,6 @@ body {
 }
 
 .questions-wrapper {
-  margin-top: 150px;
 
   .questions {
     padding-top: 50px;

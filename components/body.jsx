@@ -21,6 +21,7 @@ function Body() {
 
   return (
     <section className={`body-container ${darkThemeClass}`}>
+      <div className="cosmetic-rectangle"></div>
       <Nav />
       <ClinicRegistration />
       <MedPartner />
