@@ -7,8 +7,12 @@ import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
 import appChip from "../public/app-chip.png";
 import sliderArrow from "../public/slider-arrow.png";
+import { useTheme } from "@/pages/themeContext";
 
 const OfferCards = () => {
+  const { darkTheme, toggleTheme } = useTheme();
+  const darkThemeClass = darkTheme ? "dark-theme" : "";
+  const darkThemeOffer = darkTheme ? "dark-theme-offer" : "";
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSlider, setIsSlider] = useState(false);
@@ -36,33 +40,28 @@ const OfferCards = () => {
   }, []);
 
   useEffect(() => {
-    if (isSlider) {
       const cardWidth = sliderRef.current.clientWidth;
       sliderRef.current.style.transform = `translateX(-${
         currentIndex * cardWidth
-      }px)`;
-      console.log(cardWidth);
-    } else {
-      sliderRef.current.style.transform = "translateX(0)";
-    }
-  }, [isSlider, currentIndex]);
+      }px)`;   
+  }, [currentIndex]);
 
   return (
     <section className="what-we-offer-wrapper">
-      <div className='what-we-offer'>
+      <div className={`what-we-offer ${darkThemeClass}`}>
         <h1>რას გთავაზობთ</h1>
         <div
           className={isSlider ? "offer-cards slider-mode" : "offer-cards"}
           ref={sliderRef}
         >
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appWeb}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -73,14 +72,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appDelivery}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -91,14 +90,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appMonitoring}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -110,14 +109,14 @@ const OfferCards = () => {
             </p>
           </div>
 
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appMobile}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -128,14 +127,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appPerson}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -146,14 +145,14 @@ const OfferCards = () => {
               ვნვბნ
             </p>
           </div>
-          <div className='offer-card'>
+          <div className={`offer-card ${darkThemeOffer}`}>
             <div className="icon-frame">
               <Image
                 src={appChip}
                 width="32"
                 height="32"
-                alt='offer-image'
-                className='offer-image'
+                alt="app-web"
+                className="offer-image"
               />
             </div>
             <h3>
@@ -166,8 +165,7 @@ const OfferCards = () => {
           </div>
         </div>
 
-        {isSlider && (
-          <>
+        
             <button onClick={handlePrev} id="prevBtn">
               <Image
                 style={{ rotate: "180deg" }}
@@ -187,8 +185,6 @@ const OfferCards = () => {
                 className="slider-arrow"
               />
             </button>
-          </>
-        )}
       </div>
     </section>
   );

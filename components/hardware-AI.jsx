@@ -4,9 +4,13 @@ import appChip from "../public/app-chip.png";
 import diagonalArrow from "../public/diagonal-arrow.png";
 import AiIcon from "../public/hardware-AI.png";
 import hardwareImg from "../public/hardware-img.png";
-import cosmeticsImg from "../public/foreign-cosmetics.png";
+import cosmeticsImg from "../public/hardware-cosmetics.png";
+import cosmeticsImgDark from "../public/hardware-cosmetics-dark.png";
+import { useTheme } from "../pages/themeContext";
 
 function HardwareAI() {
+  const { darkTheme, toggleTheme } = useTheme();
+
   return (
     <section className="hardware">
       <div className="hardware-left">
@@ -77,7 +81,7 @@ function HardwareAI() {
         />
         <Image
           className="hardware-cosmetics"
-          src={cosmeticsImg}
+          src={darkTheme ? cosmeticsImgDark : cosmeticsImg}
           width="557"
           height="418"
           alt="hardware-cosmetics"

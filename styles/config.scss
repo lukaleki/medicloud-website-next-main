@@ -44,9 +44,9 @@ $secondary-color: #00ab55;
   }
 
   .phone-app {
-    gap: 150px;
+    gap: 125px;
     .mobile-wrapper {
-      width: 400px;
+      width: 411px;
       height: 411px;
 
       img {
@@ -54,13 +54,16 @@ $secondary-color: #00ab55;
         height: 516px;
       }
     }
+    .mobile-wrapper::after {
+      width: 425px;
+      height: 425px;
+    }
     p {
       width: 100% !important;
     }
   }
 
   .clinic-registration {
-
     .reg-left {
       align-items: start;
 
@@ -102,14 +105,27 @@ $secondary-color: #00ab55;
 
   .reporting {
     padding-top: 0px;
-    .reporting-card {
-      margin-left: 0px !important;
-      width: 100% !important;
-    }
 
     .reporting-img {
       width: 363px !important;
       height: 218px !important;
+      margin-top: 67px;
+    }
+
+    .reporting-cosmetics {
+      rotate: 90deg;
+    }
+
+    .reporting-btn {
+      margin-top: 125px !important;
+    }
+
+    .reporting-right {
+      margin-top: 0px;
+      .reporting-card {
+        margin-left: 0px !important;
+        width: 100% !important;
+      }
     }
   }
 
@@ -122,6 +138,10 @@ $secondary-color: #00ab55;
       width: 275px;
       height: 275px;
     }
+    .foreign-cosmetics {
+      width: 440px;
+      height: 361px;
+    }
   }
 
   .hardware {
@@ -131,9 +151,15 @@ $secondary-color: #00ab55;
       width: 400px;
       height: 300px;
     }
+
+    .hardware-cosmetics {
+      width: 436px;
+      height: 312px;
+    }
   }
 
-  .questions {
+  .questions-wrapper {
+    padding-top: 150px !important;
     .cards {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -260,7 +286,6 @@ $secondary-color: #00ab55;
       }
 
       .footer-sub {
-
         p {
           font-size: 13px;
         }
@@ -390,7 +415,7 @@ $secondary-color: #00ab55;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
-    margin-top: 50px;
+    padding-top: 50px;
     .reg-left {
       display: block;
       padding-left: 0px !important;
@@ -443,6 +468,15 @@ $secondary-color: #00ab55;
         margin-left: 125px !important;
         font-size: 20px !important;
       }
+
+      .cosmetic-circle:nth-child(1) {
+        left: 20px;
+        margin-bottom: 50px;
+      }
+
+      .cosmetic-circle:nth-child(2) {
+        display: none;
+      }
     }
   }
 
@@ -464,6 +498,11 @@ $secondary-color: #00ab55;
         width: 170px;
         height: 377px;
       }
+    }
+
+    .mobile-wrapper::after {
+      width: 310px;
+      height: 310px;
     }
 
     .mobile-right {
@@ -581,6 +620,14 @@ $secondary-color: #00ab55;
       height: 192px;
       margin-top: 120px;
       margin-left: 18px !important;
+    }
+
+    .reporting-cosmetics {
+      width: 327px;
+      height: 325px;
+      rotate: 0deg;
+      left: 25px !important;
+      margin-top: 50px !important;
     }
 
     .reporting-right {
@@ -723,85 +770,91 @@ $secondary-color: #00ab55;
         right: 10px;
         margin-top: 50px;
       }
+
+      .hardware-cosmetics {
+        right: 10px;
+      }
     }
   }
 
-  .questions {
-    margin-top: 50px;
+  .questions-wrapper {
+    padding-top: 50px !important;
 
-    h1 {
-      margin-bottom: 0px;
-    }
-
-    .cards {
-      grid-template-columns: repeat(1, 1fr) !important;
-
-      .card {
-        width: 343px !important;
-        font-size: 13px !important;
+    .questions {
+      h1 {
+        margin-bottom: 0px;
       }
-    }
 
-    .contact {
-      gap: 50px !important;
-      display: block;
+      .cards {
+        grid-template-columns: repeat(1, 1fr) !important;
 
-      .contact-left {
-        flex-direction: column-reverse;
-        img {
-          width: 341px;
-          height: 238.7px;
-          margin-left: 17px;
+        .card {
+          width: 343px !important;
+          font-size: 13px !important;
+        }
+      }
+
+      .contact {
+        gap: 50px !important;
+        display: block;
+
+        .contact-left {
+          flex-direction: column-reverse;
+          img {
+            width: 341px;
+            height: 238.7px;
+            margin-left: 17px;
+          }
+
+          .contact-line {
+            margin-left: 150px;
+            margin-bottom: 20px;
+            width: 60px;
+            height: 2px;
+
+            h3 {
+              position: relative;
+              top: -15px;
+              left: -110px;
+              rotate: 0deg;
+              margin-top: 0px;
+            }
+          }
         }
 
-        .contact-line {
-          margin-left: 150px;
-          margin-bottom: 20px;
-          width: 60px;
-          height: 2px;
+        .contact-right {
+          margin-top: 25px;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
           h3 {
-            position: relative;
-            top: -15px;
-            left: -110px;
-            rotate: 0deg;
-            margin-top: 0px;
+            font-size: 14px;
+            text-align: center;
           }
-        }
-      }
 
-      .contact-right {
-        margin-top: 25px;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+          form {
+            flex-direction: column;
+            width: 314px;
 
-        h3 {
-          font-size: 14px;
-          text-align: center;
-        }
+            input {
+              width: 314px !important;
+            }
+          }
 
-        form {
-          flex-direction: column;
-          width: 314px;
-
-          input {
+          textarea {
             width: 314px !important;
           }
-        }
+          button {
+            width: auto;
+            padding: 10px 105px 10px 105px;
+            border-radius: 10px;
 
-        textarea {
-          width: 314px !important;
-        }
-        button {
-          width: auto;
-          padding: 10px 105px 10px 105px;
-          border-radius: 10px;
-
-          h2 {
-            font-size: 16px;
+            h2 {
+              font-size: 16px;
+            }
           }
         }
       }

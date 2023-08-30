@@ -4,9 +4,13 @@ import ForeignExp from "../public/foreign-exp.png";
 import foreignPeople from "../public/foreign-people.svg";
 import foreignDoctor from "../public/foreign-doctor.png";
 import diagonalArrow from "../public/diagonal-arrow.png";
-import CosmeticImg from "../public/foreign-cosmetics.png";
+import cosmeticImg from "../public/foreign-cosmetics.png";
+import cosmeticImgDark from "../public/foreign-cosmetics-dark.png";
+import { useTheme } from "../pages/themeContext";
 
 function Foreign() {
+  const { darkTheme, toggleTheme } = useTheme();
+
   return (
     <section className="foreign">
       <div className="foreign-left">
@@ -19,7 +23,7 @@ function Foreign() {
         />
         <Image
           className="foreign-cosmetics"
-          src={CosmeticImg}
+          src={darkTheme ? cosmeticImgDark : cosmeticImg}
           width="671"
           height="600"
           alt="foreign-cosmetics"

@@ -6,15 +6,19 @@ import appWeb from "../public/app-web.png";
 import appDelivery from "../public/app-delivery.png";
 import appMobile from "../public/app-mobile.png";
 import appPerson from "../public/app-person.png";
-import CosmeticImg from "../public/reporting-cosmetics.png";
+import cosmeticImg from "../public/reporting-cosmetics.png";
+import cosmeticImgDark from "../public/reporting-cosmetics-dark.png";
+import { useTheme } from "../pages/themeContext";
 
 function Reporting() {
+  const { darkTheme, toggleTheme } = useTheme();
+
   return (
     <section className='reporting'>
       <div className="reporting-left">
       <Image
-          className="reporting-cosmetic"
-          src={CosmeticImg}
+          className="reporting-cosmetics"
+          src={darkTheme ? cosmeticImgDark : cosmeticImg}
           width="581"
           height="700"
           alt="cosmetic-img-reporting"
