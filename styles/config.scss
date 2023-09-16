@@ -344,7 +344,7 @@ $secondary-color: #00ab55;
     }
 
     .navbar-content-wrapper {
-      z-index: 5;
+      z-index: 5 !important;
       display: block;
       position: fixed;
       top: 0;
@@ -615,7 +615,7 @@ $secondary-color: #00ab55;
     display: grid;
 
     .reporting-img {
-      position: absolute;
+      position: absolute !important;
       width: 339px;
       height: 192px;
       margin-top: 120px;
@@ -681,8 +681,9 @@ $secondary-color: #00ab55;
 
     .foreign-left {
       margin-top: 50px;
+      margin-left: 85px;
       img {
-        position: absolute;
+        position: absolute !important;
         width: 276.78px;
         height: 282.73px;
         right: 40px;
@@ -766,7 +767,7 @@ $secondary-color: #00ab55;
       img {
         width: 323.13px;
         height: 231.83px;
-        position: absolute;
+        position: absolute !important;
         right: 10px;
         margin-top: 50px;
       }

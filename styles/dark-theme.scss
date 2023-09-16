@@ -36,18 +36,14 @@ $secondary-color: #00ab55;
 
   .cosmetic-rectangle {
     background-color: $dark-lighter;
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      z-index: 1;
-    }
+
+    z-index: 1;
   }
 
   .navbar {
     background-color: rgb(54, 67, 82);
     box-shadow: -7px 10px 58px -6px rgba(12, 12, 12, 0.75);
-
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      z-index: 2;
-    }
+    z-index: 2;
     a {
       color: $primary-text-color !important;
     }
@@ -87,6 +83,9 @@ $secondary-color: #00ab55;
   }
 
   .clinic-registration {
+    .reg-left {
+      z-index: 1;
+    }
     .web-btn {
       background-color: $primary-color-dark;
     }
@@ -100,13 +99,11 @@ $secondary-color: #00ab55;
       color: $primary-text-color;
     }
 
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      .mobile-img {
-        z-index: 2;
-      }
-      .mobile-wrapper::after {
-        z-index: 1;
-      }
+    .mobile-img {
+      z-index: 2;
+    }
+    .mobile-wrapper::after {
+      z-index: 1;
     }
   }
 
@@ -119,18 +116,16 @@ $secondary-color: #00ab55;
   }
 
   .reporting {
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      .reporting-img {
-        z-index: 2;
-        position: relative;
-      }
-      .reporting-cosmetics {
-        z-index: 1;
-      }
-      .reporting-card-wrapper {
-        z-index: 2;
-        position: relative;
-      }
+    .reporting-img {
+      z-index: 2;
+      position: relative;
+    }
+    .reporting-cosmetics {
+      z-index: 1;
+    }
+    .reporting-card-wrapper {
+      z-index: 2;
+      position: relative;
     }
   }
 
@@ -138,15 +133,12 @@ $secondary-color: #00ab55;
     h3 {
       color: $primary-text-color !important;
     }
-
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      .foreign-exp-img {
-        position: relative;
-        z-index: 2;
-      }
-      .foreign-cosmetics {
-        z-index: 1;
-      }
+    .foreign-exp-img {
+      position: relative;
+      z-index: 2;
+    }
+    .foreign-cosmetics {
+      z-index: 1;
     }
   }
 
@@ -154,14 +146,12 @@ $secondary-color: #00ab55;
     h3 {
       color: $primary-text-color !important;
     }
-    @media screen and (min-width: 376px) and (max-width: 1024px) {
-      .hardware-img {
-        z-index: 2;
-        position: relative;
-      }
-      .hardware-cosmetics {
-        z-index: 1;
-      }
+    .hardware-img {
+      z-index: 2;
+      position: relative;
+    }
+    .hardware-cosmetics {
+      z-index: 1;
     }
   }
 
